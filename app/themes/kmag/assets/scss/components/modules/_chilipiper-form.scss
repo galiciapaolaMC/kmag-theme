@@ -1,0 +1,51 @@
+.chilipiper-form {
+  .chilipiper-form__headline {
+    color: var(--color-text);
+    margin-bottom: 20px;
+    padding-left: 25px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _rem-calc(40px);
+      line-height: _rem-calc(48px);
+      margin-bottom: 32px;
+    }
+  }
+  .chilipiper-form__scroll-wrapper {
+    height: 550px;
+    overflow: auto;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      height: 600px;
+    }
+  }
+  .chilipiper-form__iframe-wrapper {
+    height: 1830px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      height: 1800px;
+    }
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+
+  .chilipiper-form__scroll-message {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 17px;
+    text-align: center;
+  }
+
+  .chilipiper-form__button-wrapper {
+    margin-top: 48px;
+    text-align: center;
+    width: 100%;
+
+    .btn--tertiary {
+      border-color: var(--color-seed);
+    }
+  }
+}

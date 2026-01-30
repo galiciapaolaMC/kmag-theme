@@ -1,0 +1,289 @@
+// Variables
+
+// Directories
+$images: "../../assets/images";
+
+/**************************\
+  Start Theme Colors
+\**************************/
+$black: #000;
+$white: #fff;
+$good-earth-black: #202124;
+$text-primary: $good-earth-black;
+$basic-red: #eb4034;
+$quill-gray: #dcdcd7;
+
+// greens
+$bountiful: #161e10;
+$leaf: #496c09;
+$hearty: #709255;
+$seed: #b5c927;
+$growth: #f3fcec;
+
+// article pages
+$article-intro-text: #666;
+
+// nutrient periodic table
+$nutrient-light: #f7f7f7;
+$nutrient-text-gray: #989898;
+$nutrient-dark: #414a51;
+$nutrient-background-black: #161e10;
+$nutrient-slide-btn-back: #e0e0e0;
+$nutrient-slide-btn-arrow: #999;
+$nutrient-text-border: #e6e6e6;
+
+// basic theme style
+$inactive-gray: #737373;
+$border-gray: #666666;
+$link-gray: #999999;
+
+// Brand Colors
+$microessentials-yellow: #f5a92b;
+$aspire-green: #84b854;
+$kmag-red: #ad5330;
+$pegasus-blue: #17598c;
+$biopath-blue: #20504c;
+$powercoat-blue: #20504c;
+$bioscience-green: #367e7f;
+$performance-plus-yellow: #f3ce59;
+$agrisights-yellow: #fdb913;
+$soil-yellow: #c7a800;
+$biostimulant: #00558c;
+$dark-olive: #262504;
+$smoky-black: #091807;
+$white-chocolate: #EFE3D9;
+
+//New Bioscience Calculator Colors
+$calculator-green: #00594c;
+$calculator-heading: #ddd1ca;
+$calculator-grey: #dfe1df;
+$calculator-blue: #404656;
+
+//Mulders Chart Colors
+$mulders-red: #ef481b;
+$mulders-green: #78aa06;
+
+$orange: #F9A41D;
+$blue: #0096A1;
+
+// Backgrkound Gradients
+$seed-gradient: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(181, 201, 39, 0.5) 100%
+);
+$cn-gradient: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(22, 30, 16, 0.5) 100%
+);
+$bioscience-gradient: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(54, 126, 127, 0.5) 100%
+);
+$biostimulant-gradient: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(0, 85, 140, 0.5) 100%
+);
+$nutrient-enhancer-gradient: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(0, 82, 77, 0.5) 100%
+);
+$audio-card-gradient: linear-gradient(
+  180deg,
+  rgba(181, 201, 39, 1) 0%,
+  rgba(181, 201, 39, 0.2) 100%
+);
+$highlight-blue-gradient: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgb(80 191 206) 100%
+);
+$highlight-green-gradient: linear-gradient(
+  0deg, 
+  rgba(255, 255, 255, 1) 0%,
+  rgb(229 236 159) 100%
+);
+
+//CPT
+$dove-gray: #666666;
+$dusty-gray: #999999;
+$alto: #d3d3d3;
+$buddha-gold: #c7a800;
+$silver-chalis: #b2b2b2;
+$corn: #dac400;
+$sun: #fdb913;
+$mercury: #e6e6e6;
+$pine-tree: #272605;
+$sherpa-blue: #00524d;
+//K-Mag Map
+$light-teal: #edf3f3;
+
+/*************************\
+  End Theme Colors
+\*************************/
+
+$black-10: rgba($black, 0.1);
+$black-15: rgba($black, 0.15);
+$black-20: rgba($black, 0.2);
+$black-30: rgba($black, 0.3);
+$black-40: rgba($black, 0.4);
+$black-50: rgba($black, 0.5);
+$black-60: rgba($black, 0.6);
+$black-70: rgba($black, 0.7);
+$black-80: rgba($black, 0.8);
+$black-90: rgba($black, 0.9);
+
+$white-10: rgba($white, 0.1);
+$white-20: rgba($white, 0.2);
+$white-30: rgba($white, 0.3);
+$white-40: rgba($white, 0.4);
+$white-50: rgba($white, 0.5);
+$white-60: rgba($white, 0.6);
+$white-70: rgba($white, 0.7);
+$white-80: rgba($white, 0.8);
+$white-90: rgba($white, 0.9);
+
+$dropdown-background: #fdfdfd;
+$dropdown-border-radius: 5px;
+$dropdown-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+
+// Resource Library
+$wild-sand: #f6f6f6;
+$alto: #d1d1d1;
+
+// UIkit custom variables
+
+// For more variables that can be overridden:
+// /node_modules/uikit/src/scss/variables-theme.scss
+
+// Borders
+$global-border-radius: 0;
+
+// Fonts
+$inter: "inter", helvetica, arial, sans-serif;
+$articulat-cf: "articulat-cf", helvetica, arial, sans-serif;
+$woodward: "Woodward-Regular";
+
+// Screen widths
+$container-max-width: 1200px;
+$container-xsmall-max-width: 750px;
+$container-small-max-width: 900px;
+$container-large-max-width: 1440px;
+$container-xlarge-max-width: 1600px;
+
+// Breakpoints
+$breakpoint-small: 640px;
+$breakpoint-medium: 960px;
+$breakpoint-large: 1200px;
+$breakpoint-xlarge: 1600px;
+$breakpoint-xsmall-max: ($breakpoint-small - 1);
+$breakpoint-small-max: ($breakpoint-medium - 1);
+$breakpoint-medium-max: ($breakpoint-large - 1);
+$breakpoint-large-max: ($breakpoint-xlarge - 1);
+
+// Directories
+$fonts: "../../assets/fonts";
+
+:root {
+  --color-black: #{$black};
+  --color-white: #{$white};
+  --color-red: #{$basic-red};
+
+  --color-bountiful: #{$bountiful};
+  --color-leaf: #{$leaf};
+  --color-hearty: #{$hearty};
+  --color-seed: #{$seed};
+  --color-growth: #{$growth};
+  --color-good-earth-black: #{$good-earth-black};
+
+  --color-text: #{$text-primary};
+
+  --color-microessentials-yellow: #{$microessentials-yellow};
+  --color-aspire-green: #{$aspire-green};
+  --color-kmag-red: #{$kmag-red};
+  --color-pegasus-blue: #{$pegasus-blue};
+  --color-biopath-blue: #{$biopath-blue};
+  --color-bioscience-green: #{$bioscience-green};
+  --color-performance-plus-yellow: #{$performance-plus-yellow};
+  --color-agrisights-yellow: #{$agrisights-yellow};
+  --color-soil-yellow: #{$soil-yellow};
+  --color-biostimulant: #{$biostimulant};
+  --color-smoky-black: #{$smoky-black};
+  --color-white-chocolate: #{$white-chocolate};
+
+  --inter-font: #{$inter};
+  --articulat-font: #{$articulat-cf};
+  --woodward-font: #{$woodward};
+
+  // basic theme style
+  --color-inactive-gray: #{$inactive-gray};
+  --color-border-gray: #{$border-gray};
+  --color-border-dark: #{$good-earth-black};
+  --color-link-gray: #{$link-gray};
+  --color-article-intro: #{$article-intro-text};
+
+  // Nutrient Table
+  --color-nutrient-light: #{$nutrient-light};
+  --color-nutrient-text-gray: #{$nutrient-text-gray};
+  --color-nutrient-dark: #{$nutrient-dark};
+  --color-nutrient-background-black: #{$nutrient-background-black};
+  --color-nutrient-slide-btn-back: #{$nutrient-slide-btn-back};
+  --color-nutrient-slide-btn-arrow: #{$nutrient-slide-btn-arrow};
+  --color-nutrient-text-border: #{$nutrient-text-border};
+
+  // Background Gradients
+  --gradient-seed: #{$seed-gradient};
+  --gradient-cn: #{$cn-gradient};
+  --gradient-bioscience: #{$bioscience-gradient};
+  --gradient-biostimulant: #{$biostimulant-gradient};
+  --gradient-nutrient-enhancer: #{$nutrient-enhancer-gradient};
+  --gradient-highlight-blue: #{$highlight-blue-gradient};
+  --gradient-highlight-green: #{$highlight-green-gradient};
+
+  // buttons
+  --btn-background: transparent;
+  --btn-text: #{$text-primary};
+  --btn-border: #{$text-primary};
+
+  // CPT
+  --color-alto: #{$alto};
+  --color-dove-gray: #{$dove-gray};
+  --color-dusty-gray: #{$dusty-gray};
+  --color-green-leaf: #{$leaf};
+  --color-buddha-gold: #{$buddha-gold};
+  --color-silver-chalis: #{$silver-chalis};
+  --color-corn: #{$corn};
+  --color-hunter-green: #{$bountiful};
+  --color-sun: #{$sun};
+  --color-mercury: #{$mercury};
+  --color-pine-tree: #{$pine-tree};
+  --color-sherpa-blue: #{$sherpa-blue};
+  --color-quill-gray: #{$quill-gray};
+  --color-orange: #{$orange};
+  --color-blue: #{$blue};
+
+  --color-sherpa-blue: #{$sherpa-blue};
+  --color-quill-gray: #{$quill-gray};
+
+  // K-Mag Map
+  --color-light-teal: #{$light-teal};
+
+  // Dropdown
+  --dropdown-background: #{$dropdown-background};
+  --dropdown-border-radius: #{$dropdown-border-radius};
+  --dropdown-box-shadow: #{$dropdown-box-shadow};
+
+  //New Bioscience Calculator
+  --color-calc-green: #{$calculator-green};
+  --color-calc-heading: #{$calculator-heading};
+  --color-calc-grey: #{$calculator-grey};
+  --color-calc-blue: #{$calculator-blue};
+
+  //Mulders Chart
+  --color-mulders-red: #{$mulders-red};
+  --color-mulders-green: #{$mulders-green};
+}

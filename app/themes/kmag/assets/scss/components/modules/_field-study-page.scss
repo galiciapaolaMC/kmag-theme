@@ -1,0 +1,300 @@
+.field-study-page {
+  font-family: var(--articulat-font);
+  color: var(--color-text);
+
+  .field-study-band--green {
+    background: var(--color-growth);
+    color: var(--color-bountiful);
+    padding: 24px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    margin-bottom: 8px;
+    width: 100%;
+    .field-study-back-btn {
+      flex-shrink: 0;
+    }
+
+    span {
+      vertical-align: text-bottom;
+    }
+
+    p {
+      padding-left: 20px;
+    }
+  }
+
+  .field-study-results-heading h1,
+  .field-study-heading h2 {
+    font-size: _calc-rem(30px);
+    line-height: _calc-rem(36px);
+    font-weight: 400;
+    text-align: left;
+    color: var(--color-text);
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _calc-rem(56px);
+      line-height: _calc-rem(64px);
+    }
+  }
+
+  .field-study-results-heading h1 {
+    margin: 50px 0 30px;
+    border-bottom: 6px solid var(--color-biopath-blue);
+    width: 100%;
+    @media screen and (min-width: $breakpoint-medium) {
+      width: 60%;
+    }
+  }
+
+  .field-study-heading img.field-study-crop-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .field-study-heading h2 span.super {
+    vertical-align: super;
+    font-size:  _calc-rem(16px);
+    @media screen and (min-width: $breakpoint-medium) {
+    font-size:  _calc-rem(22px);
+    }
+  }
+
+  .field-study-details p{
+    margin: 10px 0;
+    font-size: _calc-rem(18px);
+    line-height: _calc-rem(22px);
+    font-weight: 400;
+    text-align: left;
+    color: var(--color-dove-gray);
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _calc-rem(24px);
+      line-height: _calc-rem(32px);
+    }  
+    strong {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  .field-study-protocols p {
+    margin: 8px 0;
+    font-size: _calc-rem(18px);
+    line-height: _calc-rem(22px);
+    font-weight: 400;
+    text-align: left;
+    color: var(--color-black);
+    strong {
+      font-weight: 700;
+    }
+  }
+
+
+  .field-study-band h4,
+  .field-study-protocols .large-font-thin {
+    font-size: _calc-rem(28px);
+    font-weight: 400;
+    line-height: _calc-rem(32px);
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .field-study-band {
+    margin-bottom: 20px;
+
+    .large-font {
+      @media screen and (min-width: $breakpoint-medium) {
+        font-size: _calc-rem(40px);
+        font-weight: 400;
+        line-height: _calc-rem(48px);
+      }
+      font-size: _calc-rem(28px);
+      font-weight: 400;
+      line-height: _calc-rem(36px);
+      text-align: left;
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .ag-comment {
+      font-size: _calc-rem(16px);
+      font-weight: 400;
+      line-height: _calc-rem(32px);
+      text-align: left;
+      background: #edf3f3;
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 10px;
+    }
+
+
+    .small-text-bold-capitalize {
+      font-size: _calc-rem(20px);
+      font-weight: 700;
+    }
+
+  }
+  hr {
+    margin: 60px 0px;
+    border-top: 1px solid var(--color-dove-gray);
+  }
+  #field-study-map {
+    width: 100%;
+    height: 384px;
+    margin-bottom: 10px;
+    @media screen and (min-width: $breakpoint-medium) {
+      width: 100%;
+      height: 384px;
+    }
+  }
+
+  .field-study-results {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .field-study-results-difference {
+      flex: 0 0 100%;
+      background-color: var(--color-bioscience-green);
+      border-radius: 12px;
+      padding: 0px 8px 8px 8px;
+      margin-bottom: 10px;
+      .difference {
+        text-align: center;
+        color: var(--color-white);
+        font-size: _calc-rem(38px);
+        line-height: _calc-rem(24px);
+        padding: 25px 0px 10px 0px;
+      span.small-text {
+        font-family: var(--inter-font);
+        font-size: _calc-rem(12px);
+      }
+      }
+      .field-study-results-title {
+        background: var(--color-light-teal);
+        color: var(--color-bioscience-green);
+        font-family: var(--inter-font);
+        max-width: 155px;
+        padding: 5px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 0px 0px 12px 12px;
+        font-size: _calc-rem(14px);
+        line-height: _calc-rem(12px);
+      }
+    }
+    .field-study-results-yield{
+      flex: 0 0 100%;
+      background-color: var(--color-light-teal);
+      border-radius: 12px;
+      gap: 10px;
+      margin-bottom: 10px;
+      .inline-numbers {
+        display: flex;
+        padding: 5px 0px 10px 0px;
+  
+        div {
+          flex: 1;
+          text-align: center;
+          font-family: var(--inter-font);
+          font-size: _calc-rem(20px);
+          font-weight: 400;
+          line-height: _calc-rem(18px);
+          letter-spacing: 0px;
+          text-align: center;
+          span.small-text {
+            font-family: var(--inter-font);
+            font-size: _calc-rem(12px);
+          }
+        }
+      }
+      .field-study-results-title {
+        background: var(--color-bioscience-green);
+        color: var(--color-white);
+        font-family: var(--inter-font);
+        border-radius: 0px 0px 12px 12px;
+        font-size: _calc-rem(14px);
+        text-align: center;
+        padding: 5px;
+        margin: 0 8%;
+      }
+  
+      .inline-heading {
+        display: flex;
+        padding: 10px 0 5px;
+  
+        div {
+          flex: 1;
+          text-align: center;
+          font-size: _calc-rem(12px);
+          font-family: var(--inter-font);
+          line-height: _calc-rem(16px);
+        }
+      }
+    }
+    .field-study-results-col {
+      @media screen and (min-width: $breakpoint-medium) {
+        flex: 0 0 calc(50% - 5px);
+        margin-right: 5px;
+      }
+      background-color: var(--color-light-teal);
+      border-radius: 12px;
+      flex-grow: 0;
+      flex: 0 0 100%;
+      margin-bottom: 10px;
+      
+      &:last-child {
+        margin-right: 0;
+        margin-left: 5px;
+      }
+      .inline-numbers {
+        display: flex;
+        padding: 5px 0px 10px 0px;
+  
+        div {
+          flex: 1;
+          text-align: center;
+          font-family: var(--inter-font);
+          font-size: _calc-rem(20px);
+          font-weight: 400;
+          line-height: _calc-rem(18px);
+          letter-spacing: 0px;
+          text-align: center;
+          span.small-text {
+            font-family: var(--inter-font);
+            font-size: _calc-rem(12px);
+          }
+        }
+      }
+      .field-study-results-title {
+        background: var(--color-bioscience-green);
+        color: var(--color-white);
+        font-family: var(--inter-font);
+        border-radius: 0px 0px 12px 12px;
+        font-size: _calc-rem(14px);
+        text-align: center;
+        padding: 5px;
+        margin: 0 8%;
+      }
+  
+      .inline-heading {
+        display: flex;
+        padding: 5px 0 5px;
+  
+        div {
+          flex: 1;
+          text-align: center;
+          font-size: _calc-rem(12px);
+          font-family: var(--inter-font);
+          line-height: _calc-rem(16px);
+        }
+      }
+    }
+
+  }    
+  .field-study-imagery .field-boundry-image-caption {
+      color: var(--color-dove-gray);
+  }
+}

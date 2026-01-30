@@ -1,0 +1,35 @@
+
+.link {
+  background-color: pink;
+  svg {
+    color: var(--btn-text);
+    position: relative;
+
+    &.icon--rotate-180 {
+      transform: rotate(180deg);
+    }
+
+    &.icon-start {
+      margin-right: 11px;
+    }
+    &.icon-end {
+      margin-left: 11px;
+    }
+    
+    &.icon-new-tab {
+      height: _calc-rem(20px);
+      width: _calc-rem(16px);
+      top: 2px;
+    }
+
+    &.icon-download-arrow {
+      height: _calc-rem(23px);
+      width: _calc-rem(23px);
+    }
+    &.icon-arrow-right {
+      height: 23px;
+      top: 4px;
+      width: 23px;
+    }
+  }
+}

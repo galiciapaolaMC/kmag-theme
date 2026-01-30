@@ -1,0 +1,206 @@
+
+.column-content__video-fifty-fifty {
+  margin: 0;
+  width: 100%;
+
+  .video-fifty-fifty__inside-wrap {
+    position: relative;
+  }
+
+  &.video-fifty-fifty--rectangle {
+    &.theme-dark {
+      background: var(--color-bountiful);
+    }
+
+    .video-fifty-fifty__inside-wrap {
+      width: 100%;
+    }
+    
+    .video-fifty-fifty__image-holder {
+      height: 234px;
+      width: 100%;
+
+      &--rounded-top-left {
+        border-top-left-radius: 40px;
+      }
+  
+      &--rounded-top-right {
+        border-top-right-radius: 40px;
+      }
+  
+      &--rounded-bottom-left {
+        border-bottom-left-radius: 40px;
+      }
+  
+      &--rounded-bottom-right {
+        border-bottom-right-radius: 40px;
+      }
+
+      @media screen and (min-width: 400px) {
+        height: 300px;
+      }
+
+      @media screen and (min-width: $breakpoint-small) {
+        height: 410px;
+      }
+    }
+
+    .video-fifty-fifty__button-wrapper {
+      height: 234px;
+
+      @media screen and (min-width: 400px) {
+        height: 300px;
+      }
+
+      @media screen and (min-width: $breakpoint-small) {
+        height: 410px;
+      }
+    }
+  }
+
+  &.video-fifty-fifty--round {
+    @media screen and (min-width: $breakpoint-medium) {
+      padding-bottom: 0;
+    }
+
+    &.theme-dark {
+      background: var(--color-bountiful);
+    }
+
+    .video-fifty-fifty__image-holder {
+      border-radius: 50%;
+      height: 190px;
+      width: 190px;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        height: 370px;
+        width: 370px;
+      }
+    }
+
+    .video-fifty-fifty__button-wrapper {
+      height: 190px;
+      width: 190px;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        height: 370px;
+        width: 370px;
+      }
+    }
+  }
+
+  &.cell-1-child {
+    background-position: center;
+
+    &.video-fifty-fifty--round {
+      padding-top: 24px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      padding-right: 30px;
+      margin: 0 0 0 auto;
+
+      &.video-fifty-fifty--rectangle {
+        .video-fifty-fifty__image-holder {
+          background-position: center;
+          background-size: cover;
+        }
+      }
+
+      &.video-fifty-fifty--round {
+        justify-content: flex-end;
+        padding-top: 0;
+      }
+    }
+
+    @media screen and (min-width: 980px) {
+      padding-right: 40px;
+    }
+  }
+
+  &.cell-2-child {
+    background-position: center;
+
+    &.video-fifty-fifty--round {
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      padding-left: 30px;
+      margin: 0 auto 0 0;
+
+      &.video-fifty-fifty--rectangle {
+        .video-fifty-fifty__image-holder {
+          background-position: center;
+          background-size: cover;
+        }
+      }
+
+      &.video-fifty-fifty--round {
+        justify-content: flex-start;
+        padding-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 980px) {
+      padding-left: 40px;
+    }
+  }
+
+  .video-fifty-fifty__image-holder {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.mobile {
+      @media screen and (min-width: $breakpoint-medium) {
+        display: none;
+      }
+    }
+
+    &.desktop {
+      display: none;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        display: block;
+      }
+    }
+  }
+
+  .video-fifty-fifty__button-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    .video-fifty-fifty__play-btn {
+      align-items: center;
+      background: var(--color-white);
+      border-radius: 50%;
+      color: var(--color-black);
+      display: flex;
+      justify-content: center;
+      height: 60px;
+      width: 60px;
+
+      @media screen and (min-width: $breakpoint-small) {
+        height: 80px;
+        width: 80px;
+      }
+
+      svg {
+        height: 20px;
+        margin-left: 4px;
+        width: 18px;
+
+        @media screen and (min-width: $breakpoint-small) {
+          height: 30px;
+          margin-left: 4px;
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+

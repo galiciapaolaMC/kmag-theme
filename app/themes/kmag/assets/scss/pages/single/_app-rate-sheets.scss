@@ -1,0 +1,99 @@
+.app-rate-sheets {
+
+    .app-rate-sheets__header{
+        border-bottom: 1px solid var(--color-dove-gray);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    }
+
+    &.table-block {
+      margin: 30px 0;
+      overflow-x: auto;
+    }
+  
+    .table-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    .application-method-table {
+        
+            th.application-title {
+                width: 65%;
+            }
+
+        
+    }
+    .app-rate-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+      background-color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+      th,
+      td {
+        border: 1px solid #dcdcdc;
+        padding: 12px 15px;
+        text-align: left;
+        vertical-align: top;
+        font-size: 1rem;
+
+        p{
+            font-size: 1rem;
+        }
+      }
+  
+      th {
+        background-color: #f0f0f0;
+        font-weight: 600;
+        color: #333;
+      }
+  
+      tbody {
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+      }
+  
+      ul.nested-points {
+        margin: 0;
+        padding-left: 18px;
+        list-style: disc;
+  
+        li {
+          margin-bottom: 5px;
+          font-size: 0.95rem;
+          color: #444;
+        }
+      }
+    }
+
+    .btn-pdf-download {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.1875rem;
+      margin: 20px 0 0;
+      padding: 8px 20px;
+      width: -moz-fit-content;
+      width: fit-content;
+
+      svg {
+        height: _calc-rem(16px);
+      }
+    }
+  }
+  
+  // Responsive
+  @media (max-width: 768px) {
+    .app-rate-table-block {
+      overflow-x: auto;
+    }
+  
+    .app-rate-table {
+      font-size: 14px;
+      min-width: 600px;
+    }
+  }
+  

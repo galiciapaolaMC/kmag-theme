@@ -1,0 +1,20 @@
+{
+  "name": "modern-climate/mc-wp-starter-theme",
+  "description": "A WordPress starter theme for Modern Climate.",
+  "type": "wordpress-theme",
+  "config": {
+    "vendor-dir": "vendor",
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-4": {
+      "CN\\": ""
+    }
+  },
+  "require": {
+    "vinkla/extended-acf": "13.7.0"
+  },
+  "require-dev": {
+    "php-stubs/acf-pro-stubs": "*"
+  }
+}

@@ -1,0 +1,189 @@
+.btn_large {
+  border-radius: 180px;
+  color: var(--color-white);
+  font-family: var(--inter-font);
+  font-size: _rem-calc(20px);
+  padding: 15px 28px;
+  transition: 0.2s ease-in-out;
+  transition-property: color, background, border-color;
+
+  @media screen and (min-width: $breakpoint-large) {
+    font-size: _rem-calc(24px);
+    padding: 18px 32px 19px;
+  }
+}
+
+.btn {
+  background-color: var(--btn-background);
+  border: 3px solid var(--btn-border);
+  border-radius: 40px;
+  color: var(--btn-text);
+  font-size: _calc-rem(16px);
+  font-weight: 400;
+  padding: 3px 14px;
+  text-decoration: none;
+
+  // black background, white text
+  &--secondary {
+    --btn-background: #{$text-primary};
+    --btn-text: #{$white};
+  }
+
+  // light green background
+  &--tertiary {
+    --btn-background: #{$seed};
+    --btn-border: #{$seed};
+  }
+   // dark olive background
+  &--frontier-fields {
+    --btn-background: #{$dark-olive};
+    --btn-border: #{$dark-olive};
+     --btn-text: #{$white};
+  }
+
+  &--microessentials {
+    --btn-background: #{$microessentials-yellow};
+    --btn-border: #{$microessentials-yellow};
+    --btn-text: #{$text-primary};
+  }
+
+  &--aspire {
+    --btn-background: #{$aspire-green};
+    --btn-border: #{$aspire-green};
+    --btn-text: #{$text-primary};
+  }
+
+  &--k-mag {
+    --btn-background: #{$kmag-red};
+    --btn-border: #{$kmag-red};
+    --btn-text: #{$white};
+  }
+
+  &--pegasus {
+    --btn-background: #{$pegasus-blue};
+    --btn-border: #{$pegasus-blue};
+    --btn-text: #{$white};
+  }
+
+  &--biopath {
+    --btn-background: #{$bioscience-green};
+    --btn-border: #{$bioscience-green};
+    --btn-text: #{$white};
+  }
+
+  &--powercoat {
+    --btn-background: #{$bioscience-green};
+    --btn-border: #{$bioscience-green};
+    --btn-text: #{$white};
+  }
+
+  &--biosciences {
+    --btn-background: #{$bioscience-green};
+    --btn-border: #{$bioscience-green};
+    --btn-text: #{$white};
+  }
+
+  &--prb9 {
+    --btn-background: #{$biostimulant};
+    --btn-border: #{$biostimulant};
+    --btn-text: #{$white};
+  }
+
+  &[disabled] {
+    opacity: 0.75;
+  }
+
+  // smaller default .btn
+  &--small {
+    border: 2px solid var(--color-text);
+    font-size: _calc-rem(16px);
+    height: 40px;
+    padding: 8px 14px;
+  }
+
+  &--sm {
+    align-items: center;
+    display: inline-flex;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    padding: 8px 20px;
+  }
+
+  // white outline
+  &--white-outline {
+    --btn-background: transparent;
+    --btn-text: #{$white};
+    border: 2px solid var(--color-white);
+  }
+
+  svg {
+    color: var(--btn-text);
+    position: relative;
+
+    &.icon--rotate-180 {
+      transform: rotate(180deg);
+    }
+
+    &.icon-start {
+      margin-right: 11px;
+    }
+    &.icon-end {
+      margin-left: 11px;
+    }
+
+    &.icon-expand {
+      height: 23px;
+      width: 23px;
+    }
+
+    &.icon-arrow-right {
+      height: 23px;
+      top: 4px;
+      width: 23px;
+    }
+    &.icon-arrow-left {
+      height: 23px;
+      width: 23px;
+    }
+    &.icon-download-arrow {
+      height: _calc-rem(23px);
+      width: _calc-rem(23px);
+    }
+    &.icon-download {
+      height: 22px;
+      top: 2px;
+      width: 19px;
+    }
+  }
+
+  &--inline-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: var(--text-primary);
+
+    // inverted text color
+    &.btn--secondary {
+      background: transparent;
+      color: var(--color-white);
+    }
+  }
+
+  &--link {
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 8px;
+
+    .icon {
+      fill: var(--color-seed);
+      height: 0.9rem;
+      width: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.uk-modal {
+    padding: 0; 
+
+    @media screen and (min-width: $breakpoint-medium) {
+        padding: 15px;
+    }
+
+    .uk-modal-body {
+        padding: 40px 25px;
+        position: absolute;
+        height: fit-content;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        
+        @media screen and (min-width: $breakpoint-medium) {
+            padding: 50px 66px;
+            min-width: 720px;
+        }
+
+        .modal-top-container {
+            margin-bottom: 26px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid;
+            margin-left: 0;
+
+            .modal-image {
+                padding-left: 0;
+                
+                @media screen and (min-width: $breakpoint-medium) {
+                    padding-left: 15px;
+                }
+
+                img {
+                    border-radius: 50%;
+                    width: auto;
+                    height: auto;
+                    max-width: 120px;
+                    max-height: 120px;
+                }
+            }
+
+            .modal-title {
+                padding-left: 0;
+                
+                @media screen and (min-width: $breakpoint-medium) {
+                    padding-left: 15px;
+                }
+            }
+
+            .modal-name {
+                font-size: _calc-rem(24px);
+                line-height: _calc-rem(26px);
+                display: block;
+                width: 100%;
+                margin-bottom: 16px;
+
+                @media screen and (min-width: $breakpoint-medium) {
+                    font-size: _calc-rem(32px);
+                    line-height: _calc-rem(38px);
+                }
+            }
+
+            .modal-position-title {
+                display: block;
+                width: 100%;
+                font-size: _calc-rem(16px);
+                line-height: _calc-rem(20px);
+
+                @media screen and (min-width: $breakpoint-medium) {
+                    font-size: _calc-rem(20px);
+                    line-height: _calc-rem(24px);
+                }
+            }
+        }
+
+        .modal-bottom-container {
+            p {
+                display: block;
+                width: 100%;
+                font-size: _calc-rem(20px);
+                line-height: _calc-rem(24px);
+            }
+        }
+
+            .uk-modal-close {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                background-color: transparent;
+                border: 0;
+
+            svg {
+                display: block;
+                width: _calc-rem(24px);
+                height: _calc-rem(24px);
+            }
+        }
+    }
+}

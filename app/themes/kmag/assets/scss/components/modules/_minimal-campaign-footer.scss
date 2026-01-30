@@ -1,0 +1,40 @@
+.minimal-campaign-footer {
+  width: 100%;
+  border-top: 1px solid #000;
+  margin-top: 60px;
+  padding: 35px 10px 50px 10px;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    padding: 35px 0px 50px 0px;
+  }
+
+  &__logo {
+    display: flex;
+    width: auto;
+    margin-bottom: 60px;
+
+    img {
+      width: 152px;
+      height: auto;
+    }
+  }
+
+  &__menu-links {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      gap: 100px;
+      flex-direction: row;
+    }
+
+  }
+
+  &__menu-link, &__copyright {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--color-good-earth-black);
+  }
+}

@@ -1,0 +1,200 @@
+.footer {
+    font-family: var(--inter-font);
+    padding: 30px 0 10px;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        padding: 60px 0 30px;
+    }
+
+    &__logo {
+        display: block;
+        width: 130px;
+        margin: 0 auto;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            width: 160px;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        display: block;
+        width: 100%;
+        font-size: _calc-rem(14px);
+        line-height: _calc-rem(24px);
+        margin-bottom: 18px;
+        color: var(--color-text);
+
+        @media screen and (min-width: $breakpoint-medium) {
+            font-size: _calc-rem(16px);
+            line-height: _calc-rem(28px);
+        }
+    }
+
+    &__menu-links {
+        display: block;
+        width: 100%;
+        text-align: left;
+
+        @media screen and (min-width: $breakpoint-small) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+            text-align: right;
+        }
+
+        a {
+            display: inline-block;
+            font-size: _calc-rem(14px);
+            line-height: _calc-rem(28px);
+            font-weight: 500;
+            color: var(--color-text);
+            text-decoration: none;
+            margin: 0 0 20px;
+            width: 45%;
+            vertical-align: top;
+            
+            @media screen and (min-width: $breakpoint-medium) {
+                margin: 0 0 0 50px;
+                width: auto;
+                font-size: _calc-rem(16px);
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__external-link {
+        font-size: calc_rem(16px);
+        line-height: _calc-rem(28px);
+        color: var(--color-text);
+        text-decoration: none;
+        border-bottom: 1px solid var(--color-text);
+        background-color: transparent;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            margin-top: 30px;
+            font-size: calc_rem(20px);
+        }
+
+        @media screen and (min-width: $container-large-max-width) {
+            margin-top: 0;
+        }
+    }
+
+    &__second-column {
+        display: block;
+    }
+
+    &__menu-link {
+        font-size: calc_rem(14px);
+        line-height: _calc-rem(17px);
+        color: var(--color-text);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    &__newsletter {
+        text-align: center;
+        
+        @media screen and (min-width: $breakpoint-medium) {
+            text-align: right;
+            max-width: 100%;
+        }
+
+        &.uk-grid-margin {
+            @media screen and (min-width: $breakpoint-medium) {
+                margin-top: 60px;
+            }
+        }
+    }
+
+    &__legal-menu {
+        margin-top: 0;
+        order: 2;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            margin-top: 40px;
+            order: 1;
+        }
+
+        .legal-links {
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: _calc-rem(14px);
+
+            @media screen and (min-width: $breakpoint-medium) {
+                text-align: left;
+                display: inline-block;
+                width: auto;
+            }
+
+            a {
+                margin: 0 8px;
+
+                @media screen and (min-width: $breakpoint-medium) {
+                    margin: 0 16px 0 0;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: calc_rem(14px);
+        line-height: _calc-rem(17px);
+        color: var(--color-text);
+        text-decoration: none;
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            width: auto;
+            text-align: left;
+            margin-top: 0;
+            display: inline-block;
+        }
+    }
+
+    &__social-icons {
+        text-align: center;
+        margin-top: 0;
+        order: 1;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            margin-top: 40px;
+            text-align: right;
+        }
+
+        a {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin: 0 30px 0 0;
+
+            @media screen and (min-width: $breakpoint-medium) {
+                margin: 0 0 0 30px;
+            }
+
+            svg {
+                display: block;
+                width: _calc-rem(18px);
+                height: _calc-rem(18px);
+            }
+        }
+    }
+}

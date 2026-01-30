@@ -1,0 +1,167 @@
+.product-banner {
+  display: block;
+  width: 100%;
+  
+  &__content {    
+    height: auto;
+    position: relative;
+    border-radius: 0px 0px 25px 0px;
+    padding: 44px 12px;
+
+    @media screen and (min-width: $breakpoint-small) {
+      min-height: 400px;
+      padding: 72px 32px 43px;
+      border-radius: 0px 0px 40px 0px;
+    }
+
+    &.campaign-asset {
+      padding: 49px 12px;
+
+      @media screen and (min-width: $breakpoint-small) {
+        min-height: 400px;
+        padding: 74px 69px 126px;
+      }
+
+      .source {
+        display: block;
+        width: 100%;
+        margin-top: 33px;
+
+        @media screen and (min-width: $breakpoint-small) {
+          margin-top: 0;
+          position: absolute;
+          bottom: 17px;
+          right: 33px;
+        }
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    p {
+      font-family: var(--articulat-font);
+      font-size: _calc-rem(40px);
+      line-height: _calc-rem(48px);
+      font-weight: 500;
+      text-align: left;
+
+      @media screen and (min-width: $breakpoint-small) {
+        font-size: _calc-rem(64px);
+        line-height: _calc-rem(72px);
+      }
+
+      strong,
+      b {
+        font-weight: 700;
+      }
+
+      em,
+      i {
+        font-style: italic;
+      }
+    }
+
+    &.text-color-white {
+      p,
+      span,
+      a {
+        color: var(--color-white);
+      }
+    }
+
+    &.text-color-black {
+      p,
+      span,
+      a {
+        color: var(--color-text);
+      }
+    }
+
+    .source {
+      display: block;
+      width: 100%;
+      text-align: right;
+      font-size: _calc-rem(12px);
+      line-height: _calc-rem(16px);
+      font-style: italic;
+      position: relative;
+      margin-top: 53px;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: 900;
+    font-size: _calc-rem(20px);
+    line-height: _calc-rem(24px);
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: $breakpoint-small) {
+      font-size: _calc-rem(24px);
+      line-height: _calc-rem(64px);
+    }
+  }
+
+  &__campaign-content {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    p {
+      font-family: var(--woodward-font);
+      font-size: _calc-rem(48px);
+      line-height: _calc-rem(56px);
+      
+      @media screen and (min-width: $breakpoint-small) {
+        font-size: _calc-rem(66px);
+        line-height: _calc-rem(64px);
+      }
+    }
+  }
+
+  &__image-container {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    @media screen and (min-width: $breakpoint-medium) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+
+  &__image-container-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+}
