@@ -1,0 +1,72 @@
+.agrifact-filter {
+  position: relative;
+
+  &__logo {
+    max-width: 200px;
+  }
+
+  .divider {
+    margin-top: 32px;
+  }
+}
+
+.filter {
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    button {
+      align-items: center;
+      color: var(--color-text);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      width: 56px;
+
+      .icon-wrap {
+        align-items: center;
+        aspect-ratio: 1/1;
+        border: 1px solid currentColor;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        .icon {
+          fill: currentColor;
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      &:focus {
+        .icon-wrap {
+          border: 3px solid currentColor;
+        }
+      }
+
+      &.uk-active {
+        color: var(--color-hearty);
+
+        .icon-wrap {
+          border: 1px solid currentColor;
+
+          .icon {
+            fill: currentColor;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    & > div {
+      margin-bottom: 16px;
+    }
+  }
+}

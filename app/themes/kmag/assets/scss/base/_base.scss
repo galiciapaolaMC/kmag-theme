@@ -1,0 +1,57 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--inter-font);
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  position: relative;
+
+  &.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.main-container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 65px auto 0;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    margin: 97px auto 0;
+  }
+
+  &.campaign-page-builder {
+    margin: 0 auto;
+  }
+
+  &.campaign-page-builder-2024 {
+    margin: 65px auto 0;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      margin: 97px auto 0;
+    }
+
+    &.remove-margin {
+      @media screen and (min-width: $breakpoint-medium) {
+        margin-top: 0;
+      }
+    }
+
+    &.remove-margin-mobile {
+      margin-top: 0;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        margin-top: 97px;
+      }
+    }
+
+    &.remove-margin-all {
+      margin-top: 0;
+    }
+  }
+}

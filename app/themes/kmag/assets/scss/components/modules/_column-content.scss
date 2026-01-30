@@ -1,0 +1,116 @@
+.column-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 48px 20px;
+
+  @media screen and (min-width: $breakpoint-small) {
+    padding: 48px 40px;
+  }
+
+  &.width-full-width {
+    padding: 48px 0;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      padding: 48px 0;
+    }
+  }
+
+  .align-middle {
+    display: flex;
+    .column-content__cell {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .align-top {
+    display: flex;
+    .column-content__cell {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .align-bottom {
+    display: flex;
+    .column-content__cell {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .uk-grid {
+    &.uk-grid-small {
+      margin-left: -16px;
+
+      &> * {
+        padding-left: 16px;
+      }
+    }
+
+    &.uk-grid-medium {
+      margin-left: -24px;
+
+      &> * {
+        padding-left: 24px;
+      }
+    }
+
+    &.uk-grid-large {
+      margin-left: -32px;
+
+      &> * {
+        padding-left: 32px;
+      }
+    }
+
+    &.uk-grid-xlarge {
+      margin-left: -48px;
+
+      &> * {
+        padding-left: 48px;
+      }
+    }
+
+    &.reverse {
+      .cell-1 {
+        order: 2;
+
+        @media screen and (min-width: $breakpoint-medium) {
+          order: 1;
+        }
+      }
+
+      .cell-2 {
+        order: 1;
+
+        @media screen and (min-width: $breakpoint-medium) {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  .mc-modal__foreground {
+    padding: 20px;
+    
+    .mc-modal__close-button {
+      align-items: center;
+      background: $white;
+      color: $text-primary;
+      display: flex;
+      font-size: _calc-rem(30px);
+      height: 20px;
+      justify-content: center;
+      line-height: _calc-rem(25px);
+      margin: 0;
+      padding: 0;
+      width: 22px;
+    }
+
+    .column-content__modal-iframe-wrapper {
+      padding: 56.25% 0 0 0;
+      position:relative;
+    }
+  }
+}

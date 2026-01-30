@@ -1,0 +1,52 @@
+.background-gradient {
+  position: absolute;
+  left: 0;
+  max-height: 2337px;
+  height: 100%;
+  width: 100%;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  z-index: -30;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    filter: blur(857px);
+    -webkit-filter: blur(60px);
+  }
+  
+  &.position-top {
+    top: -80px;
+  }
+
+  &.position-bottom {
+    bottom: 0;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  &.gradient-cn-page {
+    background: var(--gradient-cn);
+  }
+
+  &.gradient-core-page {
+    background: var(--gradient-seed);
+  }
+
+  &.gradient-bioscience-page {
+    background: var(--gradient-bioscience);
+  }
+
+  &.gradient-biostimulant-page {
+    background: var(--gradient-biostimulant);
+  }
+
+  &.gradient-nutrient-enhancer-page {
+    background: var(--gradient-nutrient-enhancer);
+  }
+
+  &.gradient-highlight-blue {
+    background: var(--gradient-highlight-blue);
+  }
+
+  &.gradient-highlight-green {
+    background: var(--gradient-highlight-green);
+  }
+}

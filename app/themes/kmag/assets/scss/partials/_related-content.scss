@@ -1,0 +1,223 @@
+.related-content-partial {
+    margin-bottom: 48px;
+    margin-left: 0;
+
+    &__related-content {
+        padding-left: 0;
+    }
+
+    .related-topics-container {
+        padding-left: 0;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            padding-left: 40px;
+        }
+    }
+
+    .related-content-list {
+        &__title {
+            font-weight: 800;
+            font-size: _calc-rem(16px);
+            line-height: _calc-rem(24px);
+            letter-spacing: 3px;
+            color: var(--color-border-gray);
+            margin-bottom: 16px;
+    
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: _calc-rem(20px);
+                margin-bottom: 24px;
+            }
+        }
+
+        &__post-link {
+            font-weight: 500;
+            font-size: _calc-rem(20px);
+            line-height: _calc-rem(24px);
+            color: var(--color-link-gray);
+            display: block;
+            width: 100%;
+            margin-bottom: 24px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__controls {
+
+            button + button {
+                margin-left: 8px;
+            }
+
+            svg {
+                max-height: 23px;
+                max-width: 23px;
+            }
+        }
+
+        &__previous-button {
+            svg {
+                transform: rotate(180deg);
+            }
+
+            &:disabled {
+                svg {
+                    color: var(--color-inactive-gray);
+                }
+            }
+        }
+
+        &__next-button {
+            &:disabled {
+                svg {
+                    color: var(--color-inactive-gray);
+                }
+            }
+        }
+
+        &__related-tags-list {
+            li {
+                margin-top: 0;
+                margin-bottom: 24px;
+    
+                .tag-link {
+                    font-weight: 500;
+                    font-size: _calc-rem(20px);
+                    line-height: _calc-rem(24px);
+                    color: var(--color-link-gray);
+                    margin-bottom: 24px;
+                    margin-top: 0;
+                    max-width: 50%;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .related-performance-products {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media screen and (min-width: $breakpoint-small) {
+            flex-direction: row;
+        }
+    }
+
+    .related-performance-product {
+        display: none;
+        flex-direction: column;
+        flex-basis: 348px;
+        min-height: 480px;
+        padding: 48px 24px;
+        flex-shrink: 0;
+        flex-grow: 1;
+
+        &[data-pp-visible] {
+            display: flex;
+        }
+
+        &--light-text {
+            color: $white;
+
+            .related-performance-product__link {
+                border-color: $white;
+            }
+        }
+
+        &--dark-text {
+            color: $text-primary;
+
+            .related-performance-product__link {
+                border-color: $good-earth-black;
+            }
+        }
+
+        &--k-mag {
+            color: $white;
+            background-color: $kmag-red;
+
+            .related-performance-product__link {
+                border-color: $white;
+            }
+        }
+
+        &--aspire {
+            color: $text-primary;
+            background-color: $aspire-green;
+
+            .related-performance-product__link {
+                border-color: $good-earth-black;
+            }
+        }
+
+        &--microessentials {
+            color: $text-primary;
+            background-color: $microessentials-yellow;
+
+            .related-performance-product__link {
+                border-color: $good-earth-black;
+            }
+        }
+
+        &--pegasus {
+            color: $white;
+            background-color: $pegasus-blue;
+
+            .related-performance-product__link {
+                border-color: $white;
+            }
+        }
+
+        &--biopath {
+            color: $white;
+            background-color: $biopath-blue;
+
+            .related-performance-product__link {
+                border-color: $white;
+            }
+        }
+
+        &--powercoat {
+            color: $white;
+            background-color: $powercoat-blue;
+
+            .related-performance-product__link {
+                border-color: $white;
+            }
+        }
+
+        &__logo {
+            max-height: 40px;
+            align-self: flex-start;
+        }
+
+        &__tagline {
+            margin-top: 42px;
+            margin-bottom: 24px;
+            color: inherit;
+            font-family: var(--inter-font);
+            font-size: _calc-rem(40px);
+            font-weight: 500;
+            line-height: _calc-rem(52px);
+        }
+
+        &__link {
+            margin-top: auto;
+            color: inherit;
+            padding: 12px 24px;
+            border: 1px solid;
+            border-radius: 40px;
+            align-self: flex-start;
+        }
+    }
+}

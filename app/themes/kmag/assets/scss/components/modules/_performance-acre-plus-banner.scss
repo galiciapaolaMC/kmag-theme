@@ -1,0 +1,46 @@
+.performance-acre-plus-banner {
+  & > div {
+    flex-flow: column;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      min-height: 612px;
+    }
+  }
+
+  .hdg {
+    margin-bottom: 32px;
+  }
+
+  .entry__content {
+    border-top-right-radius: 50px;
+    flex: 1 1 auto;
+    margin-top: 170px;
+    padding: 70px 32px 65px; 
+    width: 100%;
+    z-index: 2;
+
+    @media screen and (min-width: $breakpoint-small) {
+      border-top-right-radius: 80px;
+      width: 80%;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: $breakpoint-large) {
+      border-top-right-radius: 100px;
+      width: 60%;
+    }
+
+    p {
+      font-size: _calc-rem(20px);
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

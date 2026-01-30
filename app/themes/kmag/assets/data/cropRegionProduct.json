@@ -1,0 +1,977 @@
+{
+        "benefitStatements": {
+                "nutrient": "Science sets apart Mosaic’s performance crop nutrition products and produces bigger yields and greater ROI for you. Insight, research, innovation and proven performance helps you get more out of every acre.",
+                "soil": "As the leader in crop nutrition, Mosaic invests in research and innovative products to unlock a farm’s fullest potential. Our biological products enhance the relationship between soil and crop nutrients to boost crop revenue potential."
+        },
+        "benefitIntro": {
+                "nutrient": "Crop nutrition",
+                "soil": "Soil health"
+        },
+        "conditionalWords": ["eastern-canada", "western-canada"],
+        "performanceAcre": {
+                "icon": "performance-acre-plus",
+                "subtext": "The power of plus",
+                "paragraph": "Combining Mosaic products achieves balanced crop nutrition. Streamline blend time and improve blend accuracy. Maximize yields and increase ROI.",
+                "buttonTitle": "Go To Performance Acre+"
+        },
+        "relevantNutrients": {
+                "title": "Explore nutrients",
+                "paragraphPartA": "Click on a nutrient to understand its role and value in helping your",
+                "paragraphPartB": "produce maximum yield."
+        },
+        "trialData": {
+                "titlePartA": "All",
+                "titlePartB": "Trial and Yield Data",
+                "buttonTitle": "See the results"
+        },
+        "calculators": {
+                "nutrient": {
+                        "crops": [
+                                "alfalfa", "corn", "soybean", "canola", "cotton", "spring-wheat", "winter-wheat"
+                        ],
+                        "title": "Calculate your nutrient removal",
+                        "paragraph": "Select crop and yield to discover what deficiencies might be lacking in your field.",
+                        "number": "3.5",
+                        "units": "TON/AC",
+                        "graphic": "",
+                        "buttonTitle": "Calculate",
+                        "urlPath": "/resource-library/nutrient-removal-calculator/"
+                },
+                "microessentials": {
+                        "crops": [
+                                "corn", "soybean", "canola", "spring-wheat", "winter-wheat", "cotton", "rice"
+                        ],
+                        "title": "Calculate your ROI with MicroEssentials®",
+                        "paragraph": "How much can you expect to get for your crop?",
+                        "graphic": "",
+                        "graphicText": "ROI increase",
+                        "buttonTitle": "Calculate",
+                        "urlPath": "/resource-library/microessentials-roi-calculator/"
+                },
+                "aspire": {
+                        "crops": [
+                                "cotton", "corn", "soybean", "alfalfa", "potato"
+                        ],
+                        "title": "Calculate your ROI with Aspire®",
+                        "paragraph": "How much can you expect to get for your crop?",
+                        "graphic": "",
+                        "graphicText": "ROI increase",
+                        "buttonTitle": "Calculate",
+                        "urlPath": "/resource-library/aspire-roi-calculator/"
+                }
+        },
+        "regionMeta": {
+             "central-corn-belt": {
+                "title": "Central Corn Belt"
+             },
+             "eastern-canada": {
+                "title": "Eastern Canada"
+             },
+             "eastern-corn-belt": {
+                "title": "Eastern Corn Belt"
+             },
+             "northern-corn-belt": {
+                "title": "Northern Corn Belt"
+             },
+             "us-northeast": {
+                "title": "US Northeast"
+             },
+             "us-pacific-northwest": {
+                "title": "US Pacific Northwest"
+             },
+             "us-southeast": {
+                "title": "US Southeast"
+             },
+             "us-southwest": {
+                "title": "US Southwest"
+             },
+             "western-canada": {
+                "title": "Western Canada"
+             },
+             "western-corn-belt": {
+                "title": "Western Corn Belt"
+             },
+             "western-plains": {
+                "title": "Western Plains"
+             },
+             "western-us": {
+                "title": "Western US"
+             }   
+        },
+        "nutrientNames": {
+                "boron": {
+                        "name": "Boron",
+                        "symbol": "B"
+                },
+                "calcium": {
+                        "name": "Calcium",
+                        "symbol": "Ca"
+                },
+                "carbon": {
+                        "name": "Carbon",
+                        "symbol": "C"
+                },
+                "chlorine": {
+                        "name": "Chlorine",
+                        "symbol": "Cl"
+                },
+                "copper": {
+                        "name": "Copper",
+                        "symbol": "Cu"
+                },
+                "iron": {
+                        "name": "Iron",
+                        "symbol": "Fe"
+                },
+                "hydrogen": {
+                        "name": "Hydrogen",
+                        "symbol": "H"
+                },
+                "manganese": {
+                        "name": "Manganese",
+                        "symbol": "Mn"
+                },
+                "magnesium": {
+                        "name": "Magnesium",
+                        "symbol": "Mg"
+                },
+                "molybdenum": {
+                        "name": "Molybdenum",
+                        "symbol": "Mo"
+                },
+                "nickel": {
+                        "name": "Nickel",
+                        "symbol": "Ni"
+                },
+                "nitrogen": {
+                        "name": "Nitrogen",
+                        "symbol": "N"
+                },
+                "phosphorus": {
+                        "name": "Phosphorus",
+                        "symbol": "P"
+                },
+                "potassium": {
+                        "name": "Potassium",
+                        "symbol": "K"
+                },
+                "oxygen": {
+                        "name": "Oxygen",
+                        "symbol": "O"
+                },
+                "sulfur": {
+                        "name": "Sulfur",
+                        "symbol": "S"
+                },
+                "zinc": {
+                        "name": "Zinc",
+                        "symbol": "Zn"
+                }
+        },
+        "productPages": {
+                "biostimulants": ["refirma-hydraguard"],
+                "biosciences": ["biopath", "powercoat", "manage", "root-honey-plus"],
+                "cropnutrition": ["microessentials", "aspire", "k-mag", "pegasus"],
+                "performance": [],
+                "tools": ["microessentials", "aspire", "k-mag", "pegasus", "biopath", "powercoat", "manage", "refirma-hydraguard", "root-honey-plus"]
+        },
+        "productCards": {
+                "aspire": {
+                        "title": "The power of boron",
+                        "type": "element",
+                        "typeName": "Performance Fertilizer",
+                        "paragraph": "Two forms of boron and potassium in one granule, uniform distribution, and spring or fall application available all season.",
+                        "name": "Aspire",
+                        "url": "/kmag/aspire/",
+                        "nutrients": ["potassium", "boron"]
+                },
+                "microessentials": {
+                        "title": "Proven to perform",
+                        "type": "element",
+                        "typeName": "Performance Fertilizer",
+                        "paragraph": "One nutritionally balanced granule provides uniform distribution of phosphorus, zinc and two forms of sulfur to last all season ",
+                        "name": "MicroEssentials",
+                        "url": "/kmag/microessentials/",
+                        "nutrients": ["nitrogen", "phosphorus", "sulfur", "zinc"]
+                },
+                "k-mag": {
+                        "title": "Three balanced nutrients",
+                        "type": "element",
+                        "typeName": "Performance Fertilizer",
+                        "paragraph": "Crop-friendly potassium, magnesium and sulfur to help every plant reach its full potential.",
+                        "name": "K-Mag",
+                        "url": "/kmag/k-mag/",
+                        "nutrients": ["potassium", "sulfur", "magnesium"]
+                },
+                "pegasus": {
+                        "title": "Formulated for pure results",
+                        "type": "element",
+                        "typeName": "Performance Fertilizer",
+                        "paragraph": "Pure white potash provides lower insolubles and impurities for more uniform blending and application.",
+                        "name": "Pegasus",
+                        "url": "/kmag/pegasus/",
+                        "nutrients": ["potassium"]
+                },
+                "biopath": {
+                        "title": "Liquid Bio Crop Nutrition",
+                        "type": "badge",
+                        "typeName": "Biological Fertilizer Complement",
+                        "paragraph": "BioPath® is a biological fertilizer complement formulated with proven strains of PGPR that increases nutrient availability, uptake, and utilization and improves early-season plant growth and vigor, optimizing yield potential in crops. As a liquid biological, it can be pre-blended with liquid fertilizers or easily tank-mixed and applied at plant, sidedress, topdress or through fertigation.",
+                        "name": "BioPath",
+                        "url": "/biosciences/bio-kmag/biopath/",
+                        "nutrients": ["NE", "Nutrient Enhancer", "round"]
+                },
+                "powercoat": {
+                        "title": "Get More Out Of Fertilizers",
+                        "type": "badge",
+                        "typeName": "Biological Fertilizer Complement",
+                        "paragraph": "PowerCoat® is the perfect complement for dry fertilizers that improves nutrient utilization for greater plant growth and vigor, helping maximize ROI from fertilizer inputs. PowerCoat comes in liquid form to coat granular fertilizer and is an economical biological option for banded or broadcast applications.",
+                        "name": "PowerCoat",
+                        "url": "/biosciences/bio-kmag/powercoat/",
+                        "nutrients": ["NE", "Nutrient Enhancer", "round"]
+                },
+                "manage": {
+                        "title": "Organic Bio Crop Nutrition",
+                        "type": "badge",
+                        "typeName": "Biological Fertilizer Complement",
+                        "paragraph": "Manage™ is an organic biological fertilizer complement formulated with proven strains of PGPR — Plant Growth Promoting Rhizobacteria — that increases nutrient availability, uptake, and utilization and improves early-season plant growth and vigor, optimizing yield potential. Manage is a dry soluble formulation for liquid applications and is approved for organic production.",
+                        "name": "Manage",
+                        "url": "/biosciences/bio-kmag/manage/",
+                        "nutrients": ["NE", "Nutrient Enhancer", "round"]
+                },
+                "refirma-hydraguard": {
+                        "title": "Mitigates Abiotic Stress",
+                        "type": "badge",
+                        "typeName": "Supplemental Fertilizer",
+                        "paragraph": "Refirma HydraGuard™ is a liquid bio crop stimulant that carries a 0-3-3 analysis and contains an osmolyte compound naturally produced by plants when they are under abiotic stress (heat, drought or salinity) as a coping mechanism. The exogenous application of Refirma™ HydraGuard™ to plants reproduces and enhances this natural response, helping to preserve growth and physiological processes and reducing the impact of the abiotic stress on the plant.",
+                        "name": "Refirma™ HydraGuard™",
+                        "url": "/biosciences/bio-crop-stimulants/refirma-hydraguard/",
+                        "nutrients": ["BI", "Beneficial Input", "square"]
+                },
+                "root-honey-plus": {
+                        "title": "Stronger Roots, Stronger Plants",
+                        "type": "badge",
+                        "typeName": "Biological Fertilizer Complement",
+                        "paragraph": "Root Honey™ Plus is a premium 1-0-1 liquid bionutrient containing amino acids derived from oilseed extract, carbohydrates, high-grade fulvic acid and kelp. It is fortified with bioactives of PGPR — Plant Growth Promoting Rhizobacteria. This ingredient-rich formulation increases microbial growth and activity and improves nutrient availability, lending to a more robust root system and optimizing plant growth and vigor.",
+                        "name": "Root Honey Plus 1-0-1",
+                        "url": "/biosciences/bio-kmag/root-honey-plus-1-0-1/",
+                        "nutrients": ["NE", "Nutrient Enhancer", "round"]
+                }
+        },
+        "alfalfa": {
+                "title": "Alfalfa",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials", "k-mag"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "western-corn-belt": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials", "k-mag"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "central-corn-belt": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["potassium", "phosphorus", "nitrogen"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["aspire", "powercoat", "biopath"],
+                                "secondaryProducts": ["microessentials", "k-mag"],
+                                "primaryNutrients": ["potassium", "boron", "phosphorus", "nitrogen"]
+                        }
+                }
+        },
+        "barley": {
+                "title": "Barley",
+                "regions": {
+                        "northern-corn-belt": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]   
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "canola": {
+                "title": "Canola",
+                "regions": {
+                        "western-corn-belt": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "citrus": {
+                "title": "Citrus",
+                "regions": {
+                        "us-southeast": {
+                                "primaryProducts": ["k-mag", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur"]
+                        },
+                        "western-us": {
+                                "primaryProducts": [],
+                                "secondaryProducts": ["powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "corn": {
+                "title": "Corn",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["k-mag", "aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "central-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "cotton": {
+                "title": "Cotton",
+                "regions": {
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["k-mag", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "microessentials"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc"]
+                        }
+                }
+        },
+        "dry-beans": {
+                "title": "Dry Beans",
+                "regions": {
+                        "western-plains": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "fruit": {
+                "title": "Fruit",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["k-mag", "manage"],
+                                "secondaryProducts": ["aspire", "powercoat", "biopath", "refirma-hydraguard"],
+                                "primaryNutrients": ["potassium", "magnesium", "sulfur", "boron", "phosphorus", "nitrogen"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["k-mag", "manage"],
+                                "secondaryProducts": ["microessentials", "aspire", "powercoat", "biopath", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["manage", "refirma-hydraguard"],
+                                "secondaryProducts": ["powercoat", "biopath"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["manage", "refirma-hydraguard"],
+                                "secondaryProducts": ["powercoat", "biopath"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["manage", "refirma-hydraguard"],
+                                "secondaryProducts": ["powercoat", "biopath"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "hay": {
+                "title": "Hay",
+                "regions": {
+                        "western-plains": {
+                                "primaryProducts": ["k-mag", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["k-mag", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["k-mag", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron"]
+                        }
+                }
+        },
+        "oats": {
+                "title": "Oats",
+                "regions": {}
+        },
+        "onions": {
+                "title": "Onions",
+                "regions": {
+                        "western-plains": {
+                                "primaryProducts": ["manage", "refirma-hydraguard"],
+                                "secondaryProducts": ["powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["microessentials", "aspire"],
+                                "secondaryProducts": ["powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["microessentials", "aspire"],
+                                "secondaryProducts": ["powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "peanuts": {
+                "title": "Peanuts",
+                "regions": {
+                        "us-southwest": {
+                                "primaryProducts": ["refirma-hydraguard"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["refirma-hydraguard"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "potassium", "magnesium", "phosphorus", "sulfur"]
+                        }
+                }
+        },
+        "peas": {
+                "title": "Peas",
+                "regions": {
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "potato": {
+                "title": "Potato",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["microessentials", "manage"],
+                                "secondaryProducts": ["k-mag", "aspire", "powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "central-corn-belt": {
+                                "primaryProducts": ["k-mag", "manage"],
+                                "secondaryProducts": ["aspire", "powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "manage"],
+                                "secondaryProducts": ["k-mag", "aspire", "powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["manage", "refirma-hydraguard"],
+                                "secondaryProducts": ["powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "rice": {
+                "title": "Rice",
+                "regions": {
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "sorghum": {
+                "title": "Sorghum",
+                "regions": {
+                        "western-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "soybean": {
+                "title": "Soybean",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc", "boron"]
+                        },
+                        "western-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "central-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "boron", "zinc"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["aspire", "k-mag"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "specialty": {
+                "title": "Specialty",
+                "regions": {}
+        },
+        "spring-cereals": {
+                "title": "Spring Cereals",
+                "regions": {}
+        },
+        "spring-wheat": {
+                "title": "Spring Wheat",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "central-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "sugar-beets": {
+                "title": "Sugar Beets",
+                "regions": {
+                        "western-corn-belt": {
+                                "primaryProducts": ["microessentials", "refirma-hydraguard"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["microessentials", "refirma-hydraguard"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["microessentials"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["microessentials", "refirma-hydraguard"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["microessentials", "refirma-hydraguard"],
+                                "secondaryProducts": ["k-mag", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "zinc"]
+                        }
+                }
+        },
+        "sugar-cane": {
+                "title": "Sugar Cane",
+                "regions": {
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["k-mag", "aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "sunflower": {
+                "title": "Sunflower",
+                "regions": {}
+        },
+        "tree-fruit-nuts-vines": {
+                "title": "Tree Fruit, Nuts, Vines",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["k-mag", "manage"],
+                                "secondaryProducts": ["aspire", "powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "boron", "sulfur"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["manage"],
+                                "secondaryProducts": ["powercoat", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "turf": {
+                "title": "Turf",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": ["root-honey-plus", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "central-corn-belt": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": ["refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["root-honey-plus"],
+                                "secondaryProducts": ["powercoat", "biopath", "refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": ["refirma-hydraguard", "root-honey-plus"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": ["refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        },
+                        "western-us": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": ["refirma-hydraguard"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        },
+        "vegetables": {
+                "title": "Vegetables",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["microessentials"],
+                                "secondaryProducts": ["k-mag", "aspire", "powercoat"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["k-mag"],
+                                "secondaryProducts": ["microessentials", "aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        }
+                }
+        },
+        "winter-wheat": {
+                "title": "Winter Wheat",
+                "regions": {
+                        "eastern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": ["k-mag", "aspire"],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "magnesium", "sulfur", "boron", "zinc"]
+                        },
+                        "western-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "northern-corn-belt": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-southwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "western-plains": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-southeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-pacific-northwest": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "western-canada": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "us-northeast": {
+                                "primaryProducts": ["microessentials", "powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium", "sulfur", "zinc"]
+                        },
+                        "eastern-canada": {
+                                "primaryProducts": ["powercoat", "biopath"],
+                                "secondaryProducts": [],
+                                "primaryNutrients": ["nitrogen", "phosphorus", "potassium"]
+                        }
+                }
+        }
+}

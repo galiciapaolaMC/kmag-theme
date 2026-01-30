@@ -1,0 +1,296 @@
+.nutrient-slider {
+  h1, h2, p, a {
+    font-family: $articulat-cf;
+  }
+
+  .nutrient-slider__slider-wrapper {
+    .uk-slider-container {
+      margin: 0 auto 60px;
+      position: relative;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        margin: 0 auto 80px;
+        display: block;
+        width: 100%;
+        padding: 0 0 0 40px;
+        right: 0px;
+      }
+    }
+
+    .uk-slider-items {
+      height: 82px;
+      margin: 0 30px;
+      padding-top: 1px;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        margin: 0 40px 0 0;
+      }
+    }
+
+    .nutrient-slider__button-wrapper {
+      align-items: center;
+      display: flex;
+      height: 83px;
+      justify-content: space-between;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      button {
+        background: var(--color-white);
+        border: 0;
+        height: 83px;
+        pointer-events: auto;
+        transition: background .25s ease;
+        width: 30px;
+
+        &.uk-invisible {
+          background: var(--color-white);
+          pointer-events: none;
+          visibility: visible !important;
+        }
+
+        &.uk-slidenav-previous {
+          text-align: left;
+        }
+
+        &.uk-slidenav-next {
+          text-align: right;
+        }
+
+        svg {
+          display: none;
+
+          &.icon-slider-prev,
+          &.icon-slider-next {
+            display: inline;
+            fill: var(--color-nutrient-slide-btn-arrow);
+            height: 24px;
+            transition: opacity .25s ease;
+            width: 8px;
+          }
+        }
+      }
+    }
+    .nutrient-slider__nutrient-box {
+      align-items: center;
+      background: $white;
+      border: 1px solid $text-primary;
+      border-radius: 5px;
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      margin: 0 3.5px;
+      width: 80px;
+      position: relative;
+      transition: background .25s ease;
+      white-space: nowrap;
+
+      &.selected,
+      &:focus,
+      &:hover {
+        background: $leaf;
+        transition: background .25s ease;
+
+        p {
+          &.nutrient-symbol,
+          &.nutrient-name {
+            color: $white;
+            transition: color .25s ease;
+          }
+        }
+      }
+
+      p {
+        color: var(--color-nutrient-text-gray);
+        font-size: _calc-rem(12px);
+        margin-bottom: 0;
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-medium) {
+          font-size: _calc-rem(13px);
+        }
+
+        &.atomic-number {
+          opacity: 0;
+          padding-right: 14px;
+          text-align: right;
+          transition: opacity .25s ease;
+          visibility: hidden;
+        }
+        &.nutrient-symbol {
+          color: $text-primary;
+          font-family: $articulat-cf;
+          font-size: _calc-rem(30px);
+          font-weight: 700;
+        }
+        &.nutrient-name {
+          bottom: 8px;
+          color: $text-primary;
+          font-size: _rem-calc(12px);
+          line-height: _rem-calc(10px);
+          position: absolute;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      &.spacer-full,
+      &.spacer-half {
+        visibility: hidden;
+      }
+
+      &.spacer-half {
+        width: 40px;
+      }
+    }
+  }
+  .nutrient-slider__text-wrapper {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 1200px;
+    padding: 0 20px;
+
+    @media screen and (min-width: $breakpoint-small) {
+      padding: 0 80px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      padding: 0 120px;
+    }
+
+    @media screen and (min-width: $breakpoint-large) {
+      margin-bottom: 100px;
+      padding: 0 180px;
+    }
+
+    .nutrient-slider__description {
+      margin-bottom: 54px;
+      max-width: 640px;
+      h1 {
+        font-size: _rem-calc(40px);
+        font-weight: bold;
+        line-height: _rem-calc(40px);
+        margin-bottom: 20px;
+      }
+      p {
+        color: var(--color-nutrient-text-gray);
+        font-size: _rem-calc(18px);
+        line-height: _rem-calc(24px);
+      }
+    }
+
+    .nutrient-slider__link-wrapper {
+      display: flex;
+      margin-bottom: 48px;
+
+      .nutrient-slider__back-link {
+        font-size: _rem-calc(14px);
+        color: $black;
+        background-color: transparent;
+
+        @media screen and (min-width: $breakpoint-medium) {
+          font-size: _rem-calc(15px);
+        }
+
+        svg {
+          color: $leaf;
+          top: 6px;
+        }
+      }
+    }
+
+    .nutrient-slider__intro {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      .nutrient-slider__intro-inner {
+        border-top: 1px solid var(--color-nutrient-text-border);
+        border-bottom: 1px solid var(--color-nutrient-text-border);
+        max-width: 300px;
+        padding: 20px 0;
+
+        @media screen and (min-width: $breakpoint-small) {
+          max-width: 350px;
+        }
+        @media screen and (min-width: $breakpoint-medium) {
+          max-width: 400px;
+        }
+      }
+
+      h2 {
+        font-size: _rem-calc(16px);
+        font-weight: bold;
+        line-height: _rem-calc(24px);
+        margin-bottom: 10px;
+      }
+      p {
+        color: var(--color-nutrient-dark);
+        font-size: _rem-calc(14px);
+        line-height: _rem-calc(24px);
+      }
+    }
+  }
+
+  &__desktop {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-small) {
+      display: block;
+      position: relative;
+    }
+  }
+
+  &__mobile {
+    display: block;
+    margin-bottom: 36px;
+   
+    @media screen and (min-width: $breakpoint-small) {
+      display: none;
+    }
+
+    .label-container {
+      display: flex;
+      align-items: center;
+    }
+
+    &-label {
+      font-weight: 800;
+      font-size: _calc-rem(14px);
+      line-height: _calc-rem(14px);
+      letter-spacing: 3px;
+      color: var(--color-black);
+    }
+
+    .nutrient-select-container {
+      display: block;
+      width: 100%;
+      position: relative;
+
+      .nutriend-select {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--color-nutrient-text-border);
+        background-color: var(--color-white);
+        padding: 10px 16px;
+        font-weight: 400;
+        font-size: _calc-rem(16px);
+        line-height: _calc-rem(16px);
+        font-family: var(--articulat-font);
+        color: var(--color-border-gray);
+        appearance: none;
+      }
+
+      svg {
+        position: absolute;
+        z-index: 1;
+        width: _calc-rem(14px);
+        height: _calc-rem(14px);
+        top: 12px;
+        right: 10px;
+      }
+    }
+  }
+}

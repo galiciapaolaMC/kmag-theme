@@ -18,13 +18,8 @@ wp
 app/uploads/*
 app/plugins/*
 app/themes/mc-wp-starter-theme
-app/themes/kmag
 app/themes/twentytwenty
 app/themes/twentytwentyone
-!app/plugins/team-search
-!app/plugins/page-to-pdf
-!app/plugins/team-csv-importer
-!app/plugins/news-csv-importer
 
 # Composer
 vendor

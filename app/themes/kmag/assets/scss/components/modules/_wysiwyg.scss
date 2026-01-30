@@ -1,0 +1,130 @@
+.wysiwyg {
+  display: block;
+  width: 100%;
+
+  h2 {
+    font-size: _calc-rem(24px);
+    line-height: _calc-rem(30px);
+    display: block;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _calc-rem(40px);
+      line-height: _calc-rem(48px);
+      max-width: 720px;
+    }
+
+    b, 
+    strong {
+      font-weight: 700;
+    }
+
+    i,
+    em {
+      font-style: italic;
+    }
+  }
+
+  h3 {
+    font-size: _calc-rem(24px);
+    line-height: _calc-rem(30px);
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _calc-rem(32px);
+      line-height: _calc-rem(38px);
+      max-width: 720px;
+    }
+
+    b, 
+    strong {
+      font-weight: 700;
+    }
+
+    i,
+    em {
+      font-style: italic;
+    }
+  }
+
+  p {
+    font-size: _calc-rem(20px);
+    line-height: _calc-rem(24px);
+
+    b, 
+    strong {
+      font-weight: 700;
+    }
+
+    i,
+    em {
+      font-style: italic;
+    }
+
+    a {
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(24px);
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 14px 0;
+
+    li {
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(24px);
+      margin-bottom: 16px;
+
+      a {
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(24px);
+        text-decoration: underline;
+      }
+
+      b, 
+      strong {
+        font-weight: 700;
+      }
+
+      i,
+      em {
+        font-style: italic;
+      }
+    }
+  }
+
+  ol {
+    list-style-type: auto;
+    padding-left: 20px;
+    margin: 14px 0;
+
+    li {
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(24px);
+      margin-bottom: 16px;
+
+      a {
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(24px);
+        text-decoration: underline;
+      }
+
+      b, 
+      strong {
+        font-weight: 700;
+      }
+
+      i,
+      em {
+        font-style: italic;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin: 24px 0;
+  }
+}

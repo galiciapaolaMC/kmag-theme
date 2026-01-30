@@ -1,0 +1,136 @@
+// Font Style
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-display: swap;
+  font-family: 'Woodward-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/Woodward-Regular/Woodward-Regular.ttf');
+}
+
+body {
+  color: var(--color-text);
+  font-family: $inter;
+  font-size: 16px;
+  line-height: _rem-calc(24px);
+}
+
+a {
+  color: var(--color-text);
+  font-family: $inter;
+  font-size: _rem-calc(16px);
+  line-height: _rem-calc(24px);
+}
+
+p {
+  color: var(--color-text);
+  font-family: $inter;
+  font-size: _rem-calc(16px);
+  line-height: _rem-calc(24px);
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  body {
+    font-size: 18px;
+    line-height: _rem-calc(24px);
+  }
+
+  a {
+    font-size: _rem-calc(18px);
+    line-height: _rem-calc(24px);
+  }
+
+  p {
+    font-size: _rem-calc(18px);
+    line-height: _rem-calc(24px);
+  }
+}
+
+.hdg {
+  color: var(--color-text);
+  font-family: $articulat-cf;
+
+  &--1 {
+    font-size: _rem-calc(32px);
+    line-height: _rem-calc(40px);
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _rem-calc(72px);
+      line-height: _rem-calc(80px);
+    }
+  }
+
+  &--2 {
+    font-size: _rem-calc(24px);
+    line-height: _rem-calc(32px);
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _rem-calc(56px);
+      line-height: _rem-calc(64px);
+    }
+  }
+
+  &--3 {
+    font-size: _rem-calc(20px);
+    line-height: _rem-calc(24px);
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _rem-calc(40px);
+      line-height: _rem-calc(48px);
+    }
+  }
+
+  &--4 {
+    font-size: _rem-calc(16px);
+    line-height: _rem-calc(20px);
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _rem-calc(20px);
+      line-height: _rem-calc(24px);
+    }
+  }
+
+  &--5 {
+    font-size: _rem-calc(11px);
+    font-weight: 500;
+    line-height: _rem-calc(16px);
+
+    @media screen and (min-width: $breakpoint-medium) {
+      font-size: _rem-calc(16px);
+      line-height: _rem-calc(20px);
+    }
+  }
+
+  .color--performance-plus-yellow {
+    color: var(--color-performance-plus-yellow);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend .hdg;
+}
+
+h1 {
+  @extend .hdg--1;
+}
+
+h2 {
+  @extend .hdg--2;
+}
+
+h3 {
+  @extend .hdg--3;
+}
+
+h4 {
+  @extend .hdg--4;
+}
+
+h5 {
+  @extend .hdg--5;
+}

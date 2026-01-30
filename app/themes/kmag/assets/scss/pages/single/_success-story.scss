@@ -1,0 +1,130 @@
+.success-story {
+
+  &__header {
+    margin-top: 48px;
+    border-bottom: 2px solid var(--color-silver-chalis);
+    padding-bottom: 64px;
+
+    .title {
+      h1:after {
+        background-color: var(--color-buddha-gold);
+        content: "";
+        display: block;
+        height: 6px;
+        margin-top: 24px;
+        max-width: 715px;
+        width: 100%;
+      }
+    }
+
+    .entry-container {
+      h2 {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        @media screen and (min-width: $breakpoint-small) {
+          margin-bottom: 24px;
+        }
+      }
+
+      p {
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(24px);
+        display: block;
+        width: 100%;
+        color: var(--color-dove-gray);
+        margin-bottom: 24px;
+      }
+
+      strong,
+      b {
+        font-weight: 700;
+        color: var(--color-black);
+      }
+    }
+  }
+
+
+  &__body {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    @media screen and (min-width: $breakpoint-medium) {
+      margin-top: 75px;
+    }
+
+    .entry-content {
+      p {
+        color: var(--color-dove-gray);
+        display: block;
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(26px);
+        margin-bottom: 24px;
+        width: 100%;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__related-content {
+    display: block;
+    width: 100%;
+    margin-top: 48px;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      border-top: 1px solid var(--color-dove-gray);
+      padding-top: 48px;
+    }
+  }
+
+  /* For share btn */
+  &__share-container {
+    .share-mobile {
+      display: none;
+    }
+
+    &.share-desktop {
+      display: none;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        display: block;
+      }
+    }
+
+    &.share-mobile {
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 75px;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        display: none;
+      }
+    }
+
+    p {
+      font-weight: 800;
+      font-size: _calc-rem(16px);
+      line-height: _calc-rem(24px);
+      letter-spacing: 3px;
+      color: var(--color-dove-gray);
+      margin-bottom: 12px;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(24px);
+      }
+    }
+  }
+
+  .sharethis-inline-share-buttons {
+    .st-btn {
+      border: 1px solid var(--color-black) !important;
+      margin-right: 3px !important;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+}

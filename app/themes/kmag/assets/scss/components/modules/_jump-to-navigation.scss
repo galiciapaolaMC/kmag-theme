@@ -1,0 +1,111 @@
+.jump-to-navigation {
+  z-index: 1;
+
+  &__container {
+    .label-container {
+      display: flex;
+      align-items: center;
+      
+      .jump-headline {
+        color: var(--color-black);
+        font-size: _calc-rem(14px);
+        font-weight: 800;
+        letter-spacing: 3px;
+        line-height: _calc-rem(24px);
+
+        @media screen and (min-width: $breakpoint-medium) {
+          font-size: _calc-rem(16px);
+        }
+      }
+    }
+
+    .select-container {
+      display: block;
+      width: 100%;
+      max-width: 350px;
+      position: relative;
+
+      .section-select {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--color-border-gray);
+        background-color: var(--color-white);
+        padding: 10px 16px;
+        font-weight: 400;
+        font-size: _calc-rem(14px);
+        line-height: _calc-rem(20px);
+        font-family: var(--articulat-font);
+        color: var(--color-border-gray);
+        appearance: none;
+
+        @media screen and (min-width: $breakpoint-medium) {
+          font-size: _calc-rem(16px);
+        }
+
+        &:focus-visible {
+          outline: 3px solid var(--color-leaf);
+          outline-offset: -3px;
+        }
+      }
+
+      .uk-dropdown {
+        width: 100%;
+        padding: 10px 16px;
+
+        button {
+          display: block;
+          width: 100%;
+          font-weight: 400;
+          font-size: _calc-rem(14px);
+          line-height: _calc-rem(20px);
+          padding: 6px 0;
+          font-family: var(--articulat-font);
+          color: var(--color-border-gray);
+
+          @media screen and (min-width: $breakpoint-medium) {
+            font-size: _calc-rem(16px);
+          }
+
+          &:focus-visible {
+            outline: 3px solid var(--color-leaf);
+            outline-offset: -3px;
+          }
+        }
+      }
+
+      svg {
+        position: absolute;
+        z-index: 1;
+        width: _calc-rem(14px);
+        height: _calc-rem(14px);
+        top: 12px;
+        right: 10px;
+      }
+    }
+
+    &.uk-sticky-fixed {
+      top: 82px !important;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        top: 120px !important;
+      }
+
+      &:before {
+        display: block;
+        content: '';
+        height: 60px;
+        left: 0;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        z-index: -1;
+        background-color: var(--color-white);
+
+        @media screen and (min-width: $breakpoint-medium) {
+          top: -23px;
+          height: 86px;
+        }
+      }
+    }
+  }
+}

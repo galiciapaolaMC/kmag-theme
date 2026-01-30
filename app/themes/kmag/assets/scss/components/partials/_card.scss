@@ -1,0 +1,158 @@
+.card {
+  position: relative;
+  width: 100%;
+
+  sup, sub {
+    position: relative;
+    font-size: 75%;
+    vertical-align: middle;
+  }
+
+  &__figure, &__figure-mobile {
+    width: 100%;
+    height: 324px;
+    margin: 0px 0px 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__figure {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      display: block;
+    }
+
+    &--rounded-top-left {
+      border-top-left-radius: 40px;
+    }
+
+    &--rounded-top-right {
+      border-top-right-radius: 40px;
+    }
+
+    &--rounded-bottom-left {
+      border-bottom-left-radius: 40px;
+    }
+
+    &--rounded-bottom-right {
+      border-bottom-right-radius: 40px;
+    }
+  }
+
+  &__figure-mobile {
+    display: block;
+    
+    @media screen and (min-width: $breakpoint-medium) {
+      display: none;
+    }
+
+    &--rounded-top-left {
+      border-top-left-radius: 40px;
+    }
+
+    &--rounded-top-right {
+      border-top-right-radius: 40px;
+    }
+
+    &--rounded-bottom-left {
+      border-bottom-left-radius: 40px;
+    }
+
+    &--rounded-bottom-right {
+      border-bottom-right-radius: 40px;
+    }
+  }
+
+  &__heading {
+    font-size: _calc-rem(32px);
+    line-height: _calc-rem(35px);
+    margin: 0px 0px 14px;
+    font-family: var(--articulat-font);
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  &__subheading {
+      margin: 0px 0px 18px;
+    }
+  &__text {
+    font-family: var(--inter-font);
+    font-weight: 400;
+    font-size: _calc-rem(20px);
+    line-height: _calc-rem(26px);
+    color: var(--text-primary);
+    margin: 0px 0px 48px;
+
+    strong,
+    b {
+      font-weight: 700;
+    }
+
+    em,
+    i {
+      color: var(--text-primary);
+      font-weight: 400;
+      font-size: _calc-rem(18px) !important;
+      line-height: _calc-rem(24px);
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    margin: 0px;
+    font-size: _calc-rem(16px);
+    line-height: _calc-rem(19px);
+
+    .btn {
+      display: inline-block;
+      margin: 0px;
+      padding: 8px 20px;
+      font-size: _calc-rem(16px);
+      line-height: _calc-rem(19px);
+    }
+
+    // overrides for base button styles
+    @media screen and (min-width: $breakpoint-medium) {
+      .btn {
+        margin: 0px;
+        padding: 8px 20px;
+        font-size: _calc-rem(16px);
+        line-height: _calc-rem(19px);
+      }
+     
+    }
+  }
+
+  &--small {
+
+    .card__figure, .card__figure-mobile {
+      height: 196px;
+      margin: 0px 0px 32px;
+    }
+
+    .card__heading {
+      font-family: var(--inter-font);
+      font-size: _calc-rem(24px);
+      line-height: _calc-rem(32px);
+      margin: 0px 0px 14px;
+    }
+   .card__subheading {
+      margin: 0px 0px 18px;
+    }
+    .card__text {
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(24px);
+      margin: 0px 0px 24px;
+    }
+
+    .card__button {
+      margin: 0px;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.box-content {
+  position: relative;
+  background-color: var(--color-bountiful);
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  sup, sub {
+    position: relative;
+    font-size: 75%;
+    vertical-align: middle;
+  }
+
+  &.card__figure--rounded-top-left {
+    border-top-left-radius: 40px;
+  }
+
+  &.card__figure--rounded-top-right {
+    border-top-right-radius: 40px;
+  }
+
+  &.card__figure--rounded-bottom-left {
+    border-bottom-left-radius: 40px;
+  }
+
+  &.card__figure--rounded-bottom-right {
+    border-bottom-right-radius: 40px;
+  }
+
+  &__figure, &__figure-mobile {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__figure {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      display: block;
+    }
+  }
+
+  &__figure-mobile {
+    display: block;
+    
+    @media screen and (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: block;
+    width: 100%;
+    background-color: var(--color-bountiful);
+    padding: 20px 20px 80px;
+  }
+
+  &__heading {
+    font-size: _calc-rem(24px);
+    line-height: _calc-rem(25px);
+    margin: 0px 0px 15px;
+    font-family: var(--inter-font);
+    font-weight: 700;
+    color: var(--color-white);
+  }
+
+  
+  &__text {
+    font-family: var(--inter-font);
+    font-weight: 400;
+    font-size: _calc-rem(14px);
+    line-height: _calc-rem(26px);
+    color: var(--color-white);
+    margin: 0px 0px 15px;
+
+    strong,
+    b {
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--color-white)
+    }
+
+    em,
+    i {
+      color: var(--color-white);
+      font-weight: 400;
+      font-size: _calc-rem(14px) !important;
+      line-height: _calc-rem(26px);
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    margin: 0px;
+    font-size: _calc-rem(14px);
+    line-height: _calc-rem(19px);
+    position: absolute;
+    bottom: 20px;
+
+    .btn {
+      display: inline-block;
+      margin: 0px;
+      padding: 8px 20px;
+      font-size: _calc-rem(14px);
+      line-height: _calc-rem(19px);
+    }
+
+    // overrides for base button styles
+    @media screen and (min-width: $breakpoint-medium) {
+      .btn {
+        margin: 0px;
+        padding: 8px 20px;
+        font-size: _calc-rem(14px);
+        line-height: _calc-rem(19px);
+      }
+     
+    }
+  }
+}

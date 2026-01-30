@@ -1,0 +1,244 @@
+.nutrient-table {
+  overflow: hidden;
+  padding: 40px 22px;
+
+  h2, p {
+    font-family: $articulat-cf;
+  }
+
+  @media screen and (min-width: $breakpoint-small) {
+    padding: 40px 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-medium) {
+    padding: 60px 80px;
+  }
+
+  @media screen and (min-width: $breakpoint-large) {
+    padding: 60px 40px 80px;
+  }
+
+  .nutrient-table__wrapper {
+    margin: 0 auto;
+    min-width: 346px;
+    max-width: 1125px;
+  }
+
+  .nutrient-table__inside-wrap {
+    max-width: 730px;
+  }
+
+  .nutrient-table__row {
+    &:first-child {
+      @media screen and (min-width: 572px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .uk-grid {
+    align-items: flex-end;
+  }
+
+  .nutrient-table__grid-box-three {
+    width: 95%;
+    transition: background .25s ease;
+
+    &.three-first {
+      @media screen and (min-width: 705px) {
+        margin-right: 13px;
+      }
+    }
+
+    &.three-last {
+      @media screen and (min-width: 572px) {
+        margin-top: 40px;
+      }
+    }
+  }
+  .nutrient-table__grid-box-four {
+    width: 95%;
+    transition: background .25s ease;
+
+    @media screen and (min-width: 705px) {
+      margin-right: 13px;
+    }
+  }
+
+  .nutrient-table__nutrient-box {
+    background: $white;
+    border: 1px solid $text-primary;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 0;
+    height: 80px;
+    margin: 3.5px;
+    width: 80px;
+    position: relative;
+    transition: background .25s ease;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:focus,
+    &:hover,
+    &.nutrient-active {
+      background: $leaf;
+      border-color: $leaf;
+      transition: background .25s ease;
+
+      p {
+        &.nutrient-symbol,
+        &.nutrient-name {
+          color: $white;
+          transition: color .25s ease;
+        }
+      }
+    }
+
+    .nutrient-symbol {
+      color: $text-primary;
+      font-family: $articulat-cf;
+      font-size: _calc-rem(30px);
+      font-weight: 700;
+    }
+
+    .nutrient-name {
+      bottom: 8px;
+      color: $text-primary;
+      font-size: _rem-calc(12px);
+      line-height: _rem-calc(10px);
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .nutrient-table__nutrient-box:focus ~ .nutrient-table__nutrient-box-group {
+    background: $leaf;
+
+    p {
+      &.group-name {
+        color: $white;
+        transition: color .25s ease;
+      }
+    }
+  }
+
+  .nutrient-table__nutrient-box-group {
+    align-items: center;
+    background: var(--color-nutrient-background-black);
+    border-radius: 5px;
+    display: flex;
+    height: 43px;
+    justify-content: center;
+    margin: 7px 3px;
+    min-width: 255px;
+    transition: background .25s ease;
+    width: 95%;
+
+    &.nutrient-group-active {
+      background-color: $leaf;
+      color: var(--color-white);
+    }
+
+    p {
+      color: $white;
+      font-size: _calc-rem(14px);
+      font-weight: bold;
+      margin-bottom: 0;
+      text-transform: uppercase;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        font-size: _calc-rem(15px);
+      }
+    }
+  }
+
+  .nutrient-table__excerpt-wrapper {
+    padding: 40px 0;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      padding: 0 0 40px 30px;
+    }
+
+    .nutrient-table__excerpt-title {
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 32px;
+
+      div {
+        align-items: center;
+        background: $leaf;
+        border-radius: 5px;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        margin-right: 20px;
+        width: 60px;
+
+        .symbol-symbol {
+          color: $white;
+          font-size: _rem-calc(30px);
+          font-weight: 700;
+          height: _calc-rem(18px);
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+          height: 80px;
+          width: 80px;
+
+          .symbol-symbol {
+            font-size: _rem-calc(40px);
+            height: _calc-rem(20px);
+          }
+        }
+      }
+      h2 {
+        color: var(--color-nutrient-background-black);
+        font-size: _calc-rem(32px);
+        font-weight: 900;
+        height: _calc-rem(24px);
+
+        @media screen and (min-width: $breakpoint-medium) {
+          font-size: _calc-rem(40px);
+          height: _calc-rem(32px);
+          line-height: _calc-rem(40px);
+        }
+      }
+    }
+    .nutrient-table__excerpt-paragraph {
+      color: var(--color-nutrient-background-black);
+      font-family: $inter;
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(24px);
+      margin-bottom: 40px;
+    }
+
+    .nutrient-table__link-wrapper {
+      .nutrient-table__excerpt-link {
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(24px);
+        width: auto;
+        display: inline-block;
+        border: 2px solid var(--color-text);
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  .mc-modal__foreground {
+    .mc-modal__close-button {
+      align-items: center;
+      background: $white;
+      color: $text-primary;
+      display: flex;
+      font-size: _calc-rem(30px);
+      height: 25px;
+      justify-content: center;
+      line-height: _calc-rem(25px);
+      width: 25px;
+    }
+  }
+}

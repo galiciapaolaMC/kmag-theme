@@ -1,0 +1,33 @@
+.cn-input {
+  position: relative;
+  width: 100%;
+
+  input[type='text'] {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    font-family: var(--inter-font);
+    font-size: __calc-rem(12px);
+    font-style: normal;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: 0px;
+    overflow: hidden;
+    padding: 0 12px;
+    text-transform: none;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.cn-input,
+.cn-dropdown {
+  & > label {
+    display: flex;
+    font-size: _calc-rem(16px);
+    margin-bottom: 4px;
+  }
+}

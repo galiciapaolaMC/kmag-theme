@@ -1,0 +1,25 @@
+.module {
+  position: relative;
+
+  &__background {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .divider {
+    background-color: var(--color-microessentials-yellow);
+    height: 4px;
+    margin-bottom: 40px;
+    width: 75%;
+
+    @media screen and (min-width: $breakpoint-small) {
+      background-color: var(--color-text);
+    }
+  }
+}

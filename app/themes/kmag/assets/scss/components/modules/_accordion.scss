@@ -1,0 +1,145 @@
+.accordion {
+  &__container {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 30px 20px;
+    border-bottom: 1px solid var(--color-text);
+
+    &.uk-open {
+      .accordion__headline {
+        .icon-accordion-open {
+          display: none;
+        }
+
+        .icon-accordion-close {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__headline {
+    display: block;
+    width: 100%;
+    font-size: _calc-rem(24px);
+    line-height: _calc-rem(32px); 
+    font-weight: 700;
+    cursor: pointer;
+    text-align: left;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+
+    &:hover {
+      color: var(--color-text);
+    }
+
+    svg {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: _calc-rem(22px);
+      height: _calc-rem(32px);
+
+      &.icon-accordion-close {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 35px;
+
+    &-row {
+      width: 100%;
+      margin: 0 0 47px;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        margin: 0 0 40px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+      
+      .uk-first-column {
+        padding-left: 6px;
+      }
+    }
+
+    .title {
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(24px);
+      display: inline-block;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      
+      @media screen and (min-width: $breakpoint-medium) {
+        margin-bottom: 0;
+        padding-right: 20px;
+      }
+    }
+
+    .underline-link {
+      display: inline-block;
+      font-size: _calc-rem(16px);
+      line-height: _calc-rem(24px);
+      margin-right: 14px;
+      padding-left: 13px;
+      text-decoration: underline;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn--small {
+      font-size: _calc-rem(16px);
+      line-height: _calc-rem(24px);
+      position: relative;
+      z-index: 1;
+      
+      svg {
+        display: inline-block;
+        width: 15px;
+        height: 17px;
+        vertical-align: middle;
+      }
+    }
+
+    .uk-text-right {
+      @media screen and (min-width: $breakpoint-medium) {
+        text-align: right;
+      }
+    }
+
+    .title-block {
+      position: relative;
+      display: inline-block;
+
+      .uk-leader-fill {
+        &:after {
+          visibility: hidden;
+
+          @media screen and (min-width: $breakpoint-medium) {
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    .buttons-block {
+      display: block;
+      text-align: left;
+
+      @media screen and (min-width: $breakpoint-medium) {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        float: right;
+      }
+    }
+  }
+}

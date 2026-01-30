@@ -1,0 +1,130 @@
+.retail-value-calculator-form {
+    max-width: 715px;
+
+    &__form {
+        fieldset label {
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+
+            input:not([type='checkbox']), select {
+                margin-top: 16px;
+                border-radius: 5px;
+                border: 1px solid #000;
+                font-family: var(--inter-font);
+                font-weight: 300;
+                color: var(--color-text);
+                line-height: _calc_rem(18px);
+                font-size: _calc_rem(20px);
+            }
+
+            input:not([type='checkbox']) {
+                padding: 7px 10px;
+            }
+
+            select {
+                appearance: none;
+                padding: 10px;
+            }
+
+            span {
+                font-size: _calc_rem(14px);
+                line-height: _calc_rem(20px);
+                color: var(--color-inactive-gray);
+            }
+
+            sup {
+                top: -.1em;
+                color: var(--color-inactive-gray);
+            }
+        }
+
+        .side-by-side {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+
+            label {
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+
+            @media screen and (min-width: $breakpoint-small) {
+                flex-direction: row;
+                gap: 26px;
+            }
+        }
+
+        .rvc-select-container {
+            display: block;
+            width: 100%;
+            position: relative;
+
+            select {
+                display: block;
+                width: 100%;
+                appearance: none;
+                background-color: var(--color-white);
+            }
+
+            svg.icon-select-dropdown {
+                position: absolute;
+                z-index: 1;
+                width: _calc-rem(14px);
+                height: _calc-rem(14px);
+                right: 10px;
+                top: 27px;
+                stroke: #000;
+            }
+        }
+
+        .retail-value-calculator-form__agree-checkbox {
+            display: flex;
+            gap: 16px;
+
+            input[type=checkbox] {
+                background-color: white;
+                flex-shrink: 0;
+                appearance: none;
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:checked {
+                    &:after {
+                        content: '\2714';
+                        font-size: _calc_rem(24px);
+                        position: absolute;
+                        top: 6px;
+                        left: 8px;
+                        color: #000;
+                    }
+                }
+            }
+
+            .checkbox-label-container {
+                * {
+                    font-size: _calc_rem(14px);
+                    line-height: _calc_rem(20px);
+                    font-family: var(--inter-font);
+                }
+                a {
+                    color: var(--color-leaf);
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid var(--color-inactive-gray);
+
+        .btn {
+            margin-top: 35px;
+        }
+    }
+}

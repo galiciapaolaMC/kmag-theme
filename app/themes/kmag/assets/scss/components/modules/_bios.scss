@@ -1,0 +1,75 @@
+.bios {
+  &__content {
+    cursor: pointer;
+    
+    .name {
+      display: block;
+      width: 100%;
+      font-size: _calc-rem(20px);
+      line-height: _calc-rem(26px);
+      margin-bottom: 8px;
+      text-align: center;
+
+      @media screen and (min-width: $breakpoint-small) {
+        font-size: _calc-rem(24px);
+        line-height: _calc-rem(32px);
+        margin-bottom: 14px;
+        text-align: left;
+      }
+    }
+
+    .title {
+      display: block;
+      width: 100%;
+      font-size: _calc-rem(16px);
+      line-height: _calc-rem(20px);
+      text-align: center;
+
+      @media screen and (min-width: $breakpoint-small) {
+        font-size: _calc-rem(20px);
+        line-height: _calc-rem(26px);
+        text-align: left;
+      }
+    }
+
+    .bios__image {
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        max-width: 250px;
+        margin: 0 auto 27px;
+        border-radius: 50%;
+        display: block;
+      }
+    }
+
+    .view-bio {
+      display: block;
+      width: 100%;
+      border: 0;
+      background-color: transparent;
+      font-family: var(--inter-font);
+      font-size: _calc-rem(16px);
+      line-height: _calc-rem(32px);
+      color: var(--color-text);
+      cursor: pointer;
+      text-align: center;
+
+      @media screen and (min-width: $breakpoint-small) {
+        text-align: left;
+      }
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        width: _calc-rem(16px);
+        height: _calc-rem(16px);
+        margin-right: 17px;
+        fill: var(--color-seed);
+        color: var(--color-seed);
+      }
+    }
+  }
+}
