@@ -64,8 +64,6 @@ class VideoArticles
                     ])
                     ->instructions(__("Resource page feature image", 'kmag')),
                 WysiwygEditor::make(__('Article Body', 'kmag'), 'article_body'),
-                Common::gatedContentFields(),
-                Common::scoredContentFields(true, 'video-watch')
             ]
         );
     }

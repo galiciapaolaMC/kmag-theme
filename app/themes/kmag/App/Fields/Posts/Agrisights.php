@@ -40,8 +40,6 @@ class Agrisights
                     ]),
                 WysiwygEditor::make(__('Article Introduction', 'kmag'), 'article-introduction'),
                 WysiwygEditor::make(__('Article Body', 'kmag'), 'article-body'),
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }

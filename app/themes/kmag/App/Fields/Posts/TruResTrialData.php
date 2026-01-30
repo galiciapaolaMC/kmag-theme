@@ -75,8 +75,6 @@ class TruResTrialData
                         'active' => __('Active', 'kmag'), 
                         'inactive' => __('Inactive', 'kmag')
                     ]),
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }

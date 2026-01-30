@@ -1808,7 +1808,6 @@ class ResourceLibraryUtil implements WordPressHooks
                                 ->postTypes(['success-story'])
                                 ->returnFormat('id'),
                         ]),
-                    Common::aiAgentFields()
                 ],
                 'location' => [
                     Location::where('post_type', 'page')->and('page_template', '==', 'templates/resource-library.php'),

@@ -49,8 +49,6 @@ class RobustArticles
                     ->instructions(__('This text will display on the search results page.', 'kmag')),
                 WysiwygEditor::make(__('Article Body', 'kmag')),
                 Common::authorFields(),
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }
