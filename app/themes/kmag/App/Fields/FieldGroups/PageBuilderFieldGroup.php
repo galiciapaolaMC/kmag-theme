@@ -140,12 +140,6 @@ class PageBuilderFieldGroup extends RegisterFieldGroups
                     (new Video())->fields(),
                     (new Wysiwyg())->fields()
                 ]),
-            Common::gatedContentFields(),
-            Common::scoredContentFields(),
-            Common::pageAttributeName(),
-            Common::dynamicContentReplacementFields(),
-            Common::linkReplacementField(),
-            Common::aiAgentFields(),
         ]);
     }
 

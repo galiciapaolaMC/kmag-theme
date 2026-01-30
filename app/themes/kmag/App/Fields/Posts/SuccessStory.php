@@ -31,8 +31,6 @@ class SuccessStory
                     ->instructions(__('This field is only used for importing from contentful data', 'kmag')),
                 Text::make(__('Article Title', 'kmag'), 'article_title'),
                 WysiwygEditor::make(__('Article Body', 'kmag'), 'article_body'),
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }

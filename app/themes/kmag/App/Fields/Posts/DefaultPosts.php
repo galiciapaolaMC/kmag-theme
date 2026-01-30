@@ -23,8 +23,6 @@ class DefaultPosts
         return apply_filters(
             'cn/posts/default-posts',
             [
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }

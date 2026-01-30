@@ -69,8 +69,6 @@ class Agrifacts
                     ->wrapper([
                         'width' => '50'
                     ]),
-                    Common::gatedContentFields(),
-                    Common::scoredContentFields()
             ]
         );
     }

@@ -55,8 +55,6 @@ class GHSLabel
                     ])->buttonLabel(__('Add Statements', 'kmag'))
                     ->layout('table'),
                 WysiwygEditor::make(__('Company Address', 'kmag')),
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }

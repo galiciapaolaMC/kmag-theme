@@ -123,9 +123,7 @@ class ScoredBuilderFieldGroup extends RegisterFieldGroups
                     (new Video())->fields(),
                     (new Wysiwyg())->fields()
                 ]),
-            Common::pageAttributeName(),
             Common::pageAnnouncementBar(),
-            Common::linkReplacementField(),
         ]);
     }
 }

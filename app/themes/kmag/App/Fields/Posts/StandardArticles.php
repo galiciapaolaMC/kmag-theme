@@ -49,8 +49,6 @@ class StandardArticles
                 Text::make(__('Author Title', 'kmag'), 'author_title')->wrapper([
                     'width' => '50'
                 ]),
-                Common::gatedContentFields(),
-                Common::scoredContentFields()
             ]
         );
     }

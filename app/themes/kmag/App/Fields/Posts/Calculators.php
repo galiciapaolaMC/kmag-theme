@@ -45,8 +45,6 @@ class Calculators
                     ])
                     ->defaultValue('vue-plugin')
                     ->returnFormat('value'),
-                Common::gatedContentFields(),
-                Common::scoredContentFields(true, 'calculate-click')
             ]
         );
     }
