@@ -1,0 +1,84 @@
+{
+  "name": "modern-climate/mc-wp-starter",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress file structure for MC projects.",
+  "config": {
+    "preferred-install": "dist",
+    "platform": {
+      "php": "8.1"
+    },
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true,
+      "pivvenit/acf-pro-installer": true,
+      "ffraenz/private-composer-installer": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/pantheon-systems/wordpress-composer"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ModernClimate/mc-wp-starter-theme"
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com"
+    },
+    {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    }
+  ],
+  "require": {
+    "composer/installers": "*",
+    "vinkla/extended-acf": "*",
+    "vlucas/phpdotenv": "^4",
+    "oscarotero/env": "^1.1.0",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "^1.0.0",
+    "mmucklo/krumo": "*",
+    "pantheon-systems/wordpress-composer": "*",
+    "modern-climate/mc-wp-starter-theme": "dev-master",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "*",
+    "johnpbloch/wordpress-core-installer": "^2",
+    "wpackagist-theme/twentytwentyone": "*",
+    "wpackagist-plugin/debug-bar": "^1",
+    "wpackagist-plugin/google-tag-manager": "*",
+    "wpackagist-plugin/redirection": "*",
+    "wpackagist-plugin/wp-native-php-sessions": "^1",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpengine/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/duplicate-post": "*",
+    "wpackagist-plugin/google-site-kit": "*",
+    "wpackagist-plugin/enable-media-replace": "*",
+    "wpackagist-plugin/megamenu": "*",
+    "wpackagist-plugin/sharethis-share-buttons": "^2"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "scripts": {
+    "build-assets": [
+      "composer install --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress"
+    ]
+  }
+}
