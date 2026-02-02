@@ -1,2 +1,2 @@
 ENV_THEME=kmag 
-REMOTE_REPO=
+REMOTE_REPO=ssh://codeserver.dev.1d4ac46f-9e27-4dab-8a86-a41acf6a332e@codeserver.dev.1d4ac46f-9e27-4dab-8a86-a41acf6a332e.drush.in:2222/~/repository.git
