@@ -35,7 +35,6 @@ class SDSPages implements WordPressHooks
                 'supports' => ['title', 'thumbnail'],
                 'menu_position' => 29,
                 'has_archive' => false,
-                'rewrite' => array( 'slug' => 'resource-library' )
             ]
         );
     }

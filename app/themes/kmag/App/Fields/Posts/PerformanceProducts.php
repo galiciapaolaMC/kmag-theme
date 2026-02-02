@@ -75,12 +75,6 @@ class PerformanceProducts extends Layouts
                     ])
                     ->conditionalLogic([ConditionalLogic::where('icon-section-variant', '==', 'product-type')])
                     ->returnFormat('value'),
-                Relationship::make(__('Associated Nutrients', 'cropnutrition'), 'nutrients')
-                    ->postTypes(['nutrients'])
-                    ->conditionalLogic([ConditionalLogic::where('icon-section-variant', '==', 'nutrient-list')])
-                    ->filters([
-                        'search',
-                    ]),
                 Image::make(__('Product Image', 'kmag')),
                 Text::make(__('Performance Product Slug', 'kmag')),
                 ColorPicker::make(__('Background Color', 'kmag'), 'color'),

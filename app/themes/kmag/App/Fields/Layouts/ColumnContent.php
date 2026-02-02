@@ -10,7 +10,6 @@ use CN\App\Fields\Layouts\Partials\ImageFiftyFifty;
 use CN\App\Fields\Layouts\Partials\LinkableCard;
 use CN\App\Fields\Layouts\Partials\TextFiftyFifty;
 use CN\App\Fields\Layouts\Partials\VideoFiftyFifty;
-use CN\App\Fields\Layouts\DiDAgent;
 
 use Extended\ACF\Fields\ButtonGroup;
 use Extended\ACF\Fields\ColorPicker;
@@ -54,7 +53,6 @@ class ColumnContent extends Layouts
                                     (new LinkableCard())->fields(),
                                     (new TextFiftyFifty())->fields(),
                                     (new VideoFiftyFifty())->fields(),
-                                    (new DiDAgent())->fields(),
                                 ])
                                 ->wrapper([
                                     'width' => '100'

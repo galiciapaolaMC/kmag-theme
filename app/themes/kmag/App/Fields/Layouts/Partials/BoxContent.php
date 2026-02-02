@@ -59,7 +59,6 @@ class BoxContent extends Layouts
                                     'primary' => __('Primary', 'kmag'),
                                     'secondary' => __('Secondary', 'kmag'),
                                     'tertiary' => __('Tertiary', 'kmag'),
-                                    'frontier-fields' => __('Frontier Fields', 'kmag'),
                                 ])
                                 ->defaultValue('primary')
                                 ->returnFormat('value')

@@ -3,51 +3,15 @@
 namespace CN\App\Fields;
 
 use CN\App\Fields\Layouts\Accordion;
-use CN\App\Fields\Layouts\AccordionPost;
-use CN\App\Fields\Layouts\AdvancedCNPlant;
 use CN\App\Fields\Layouts\AgrifactFilter;
-use CN\App\Fields\Layouts\AnchorLink;
 use CN\App\Fields\Layouts\BackgroundGradient;
 use CN\App\Fields\Layouts\BentoBox;
-use CN\App\Fields\Layouts\Bios;
-use CN\App\Fields\Layouts\Calculator;
-use CN\App\Fields\Layouts\Carousel;
-use CN\App\Fields\Layouts\CarouselHero;
-use CN\App\Fields\Layouts\ChilipiperForm;
 use CN\App\Fields\Layouts\ColumnContent;
 use CN\App\Fields\Layouts\ContentArea;
 use CN\App\Fields\Layouts\ContentBlock;
-use CN\App\Fields\Layouts\DealerLocator;
-use CN\App\Fields\Layouts\DiDAgent;
-use CN\App\Fields\Layouts\EpisodeFiltering;
-use CN\App\Fields\Layouts\ExploreMore;
-use CN\App\Fields\Layouts\FarmerEpisodes;
-use CN\App\Fields\Layouts\FarmerSliderBlock;
-use CN\App\Fields\Layouts\FieldStudyPage;
-use CN\App\Fields\Layouts\FrontierFieldTrialDataBlock;
-use CN\App\Fields\Layouts\FullWidthGraphic;
 use CN\App\Fields\Layouts\Hero;
-use CN\App\Fields\Layouts\Image as ImageLayout;
-use CN\App\Fields\Layouts\JumpToNavigation;
-use CN\App\Fields\Layouts\MediaAssetBanner;
-use CN\App\Fields\Layouts\MinimalCampaignFooter;
-use CN\App\Fields\Layouts\ModalForm;
-use CN\App\Fields\Layouts\NutrientDeficiencies;
-use CN\App\Fields\Layouts\NutrientSlider;
-use CN\App\Fields\Layouts\NutrientKnowledge;
-use CN\App\Fields\Layouts\NutrientTable;
-use CN\App\Fields\Layouts\PerformanceAcrePlusBanner;
-use CN\App\Fields\Layouts\PerformanceMap;
-use CN\App\Fields\Layouts\ProductBanner;
-use CN\App\Fields\Layouts\ProductCards;
-use CN\App\Fields\Layouts\ProductPanel;
-use CN\App\Fields\Layouts\Quote;
-use CN\App\Fields\Layouts\ShortHero;
-use CN\App\Fields\Layouts\Slider;
 use CN\App\Fields\Layouts\SplitBanner;
-use CN\App\Fields\Layouts\Video;
 use CN\App\Fields\Layouts\Wysiwyg;
-use Extended\ACF\ConditionalLogic;
 use Extended\ACF\Fields\ButtonGroup;
 use Extended\ACF\Fields\Group;
 use Extended\ACF\Fields\Image;
@@ -56,11 +20,6 @@ use Extended\ACF\Fields\Select;
 use Extended\ACF\Fields\Checkbox;
 use Extended\ACF\Fields\Text;
 use Extended\ACF\Fields\Textarea;
-use Extended\ACF\Fields\TrueFalse;
-use Extended\ACF\Fields\WysiwygEditor;
-use Extended\ACF\Fields\Repeater;
-use Extended\ACF\Fields\Link;
-use Extended\ACF\Fields\PageLink;
 use Extended\ACF\Fields\FlexibleContent;
 
 class Common
@@ -71,49 +30,14 @@ class Common
             ->buttonLabel(__('Add Module', 'kmag'))
             ->layouts([
                 (new Accordion())->fields(),
-                (new AccordionPost())->fields(),
-                (new AdvancedCNPlant())->fields(),
                 (new AgrifactFilter())->fields(),
-                (new AnchorLink())->fields(),
                 (new BackgroundGradient())->fields(),
                 (new BentoBox())->fields(),
-                (new Bios())->fields(),
-                (new Calculator())->fields(),
-                (new Carousel())->fields(),
-                (new CarouselHero())->fields(),
-                (new ChilipiperForm())->fields(),
                 (new ColumnContent())->fields(),
-                (new DiDAgent())->fields(),
-                (new EpisodeFiltering())->fields(),
-                (new ExploreMore())->fields(),
-                (new FarmerEpisodes())->fields(),
-                (new FrontierFieldTrialDataBlock())->fields(),
-                (new FarmerSliderBlock())->fields(),
                 (new ContentArea())->fields(),
                 (new ContentBlock())->fields(),
-                (new DealerLocator())->fields(),
-                (new FieldStudyPage())->fields(),
-                (new FullWidthGraphic())->fields(),
                 (new Hero())->fields(),
-                (new ImageLayout())->fields(),
-                (new JumpToNavigation())->fields(),
-                (new MinimalCampaignFooter())->fields(),
-                (new MediaAssetBanner())->fields(),
-                (new ModalForm())->fields(),
-                (new NutrientDeficiencies())->fields(),
-                (new NutrientKnowledge())->fields(),
-                (new NutrientSlider())->fields(),
-                (new NutrientTable())->fields(),
-                (new PerformanceMap())->fields(),
-                (new PerformanceAcrePlusBanner())->fields(),
-                (new ProductBanner())->fields(),
-                (new ProductCards())->fields(),
-                (new ProductPanel())->fields(),
-                (new Quote())->fields(),
-                (new ShortHero())->fields(),
-                (new Slider())->fields(),
                 (new SplitBanner())->fields(),
-                (new Video())->fields(),
                 (new Wysiwyg())->fields()
             ]);
     }
@@ -130,33 +54,14 @@ class Common
             ->fields([
                 ButtonGroup::make(__('Image Type', 'kmag'))
                     ->choices([
-                        'image_set' => __('Image Set', 'kmag'),
                         'individual'  => __('Individual', 'kmag')
                     ])
-                    ->defaultValue('image_set')
+                    ->defaultValue('individual')
                     ->wrapper([
                         'width' => '50'
                     ]),
-                Select::make(__('Set Number', 'kmag'))
-                    ->choices([
-                        '1' => __('Image Set 1', 'kmag'),
-                        '2' => __('Image Set 2', 'kmag'),
-                        '3' => __('Image Set 3', 'kmag'),
-                        '4' => __('Image Set 4', 'kmag'),
-                        '5' => __('Image Set 5', 'kmag')
-                    ])
-                    ->returnFormat('value')
-                    ->conditionalLogic([
-                        ConditionalLogic::where('image_type', '==', 'image_set')
-                    ]),
-                Image::make(__('Image Mobile', 'kmag'))
-                    ->conditionalLogic([
-                        ConditionalLogic::where('image_type', '==', 'individual')
-                    ]),
+                Image::make(__('Image Mobile', 'kmag')),
                 Image::make(__('Image Desktop', 'kmag'))
-                    ->conditionalLogic([
-                        ConditionalLogic::where('image_type', '==', 'individual')
-                    ])
             ]);
     }
 
@@ -281,70 +186,7 @@ class Common
             ->defaultValue('none');
     }
 
-    /**
-     * Generates a Checkbox group filled with crop options
-     *
-     * @param string $field_name - name of the ACF field
-     * @param string $field_type - type of ACF field
-     * @return Checkbox
-     */
-    public static function cropChoice($field_name = 'crops', $field_type = 'picklist')
-    {
-        $args = array(
-            'post_type' => 'crops',
-            'posts_per_page' => -1
-        );
-        $crop_posts = new \WP_Query($args);
-
-        $crops = array();
-        if ($crop_posts->have_posts()) {
-            foreach ($crop_posts->posts as $crop_post) {
-                $crop_key = strtolower($crop_post->post_name);
-                $crops[$crop_key] =  __($crop_post->post_title, 'kmag');
-            }
-        }
-
-        asort($crops);
-        if ($field_type === 'select') {
-            return Select::make(__($field_name, 'kmag'))
-                ->instructions(__('Select a crop', 'kmag'))
-                ->choices($crops)
-                ->returnFormat('value');
-        }
-        return Checkbox::make(__($field_name, 'kmag'))
-            ->instructions(__('Select one or more crops', 'kmag'))
-            ->choices($crops)
-            ->returnFormat('value');
-    }
-
-    public static function nutrientChoice($field_name = 'nutrients', $field_type = 'picklist')
-    {
-        $args = array(
-            'post_type' => 'nutrients',
-            'posts_per_page' => -1
-        );
-        $nutrient_posts = new \WP_Query($args);
-
-        $nutrients = array();
-        if ($nutrient_posts->have_posts()) {
-            foreach ($nutrient_posts->posts as $nutrient_post) {
-                $nutrient_key = strtolower($nutrient_post->post_name);
-                $nutrients[$nutrient_key] =  __($nutrient_post->post_title, 'kmag');
-            }
-        }
-
-        asort($nutrients);
-        if ($field_type === 'select') {
-            return Select::make(__($field_name, 'kmag'))
-                ->instructions(__('Select a nutrient', 'kmag'))
-                ->choices($nutrients)
-                ->returnFormat('value');
-        }
-        return Checkbox::make(__($field_name, 'kmag'))
-            ->instructions(__('Select one or more nutrients', 'kmag'))
-            ->choices($nutrients)
-            ->returnFormat('value');
-    }
+   
 
     /**
      * Returns an associative array of performance product titles associated with their key
@@ -425,66 +267,4 @@ class Common
             ]);
     }
 
-    public static function pageAnnouncementBar()
-    {
-        return Group::make(__('Announcement Bar', 'kmag'), 'announcement-bar')
-            ->layout('block')
-            ->fields([
-                ButtonGroup::make(__('Background Color', 'kmag'), 'background-color')
-                    ->choices([
-                        'background-black' => __('Black', 'kmag'),
-                        'background-teal' => __('Teal', 'kmag'),
-                    ])
-                    ->defaultValue('background-black'),
-                WysiwygEditor::make(__('Content', 'kmag'), 'content')
-                    ->mediaUpload(false),
-            ]);
-    }
-
-    public static function stickyNavigation()
-    {
-        return Group::make(__('Page Navigation', 'kmag'), 'page-navigation')
-            ->layout('block')
-            ->fields([
-                ButtonGroup::make(__('Desktop Navigtion', 'kmag'), 'desktop-navigation')
-                    ->choices([
-                        'true' => __('True', 'kmag'),
-                        'false'  => __('False', 'kmag')
-                    ])
-                    ->defaultValue('false')
-                    ->wrapper([
-                        'width' => '50'
-                    ]),
-                ButtonGroup::make(__('Mobile Navigtion', 'kmag'), 'mobile-navigation')
-                    ->choices([
-                        'true' => __('True', 'kmag'),
-                        'false'  => __('False', 'kmag')
-                    ])
-                    ->defaultValue('true')
-                    ->wrapper([
-                        'width' => '50'
-                    ]),
-                Repeater::make(__('Navigation', 'kmag'), 'navigation')
-                    ->min(1)
-                    ->layout('block')
-                    ->fields([
-                        Text::make(__('Section Name', 'kmag'), 'section-name')
-                            ->wrapper([
-                                'width' => '25'
-                            ]),
-                        Text::make(__('Section ID', 'kmag'), 'section-id')
-                            ->wrapper([
-                                'width' => '25'
-                            ]),
-                        Link::make(__('External Link', 'kmag'), 'external-link')
-                            ->wrapper([
-                                'width' => '25'
-                            ]),
-                        PageLink::make(__('Internal Link', 'kmag'), 'internal-link')
-                            ->wrapper([
-                                'width' => '25'
-                            ])
-                    ])
-            ]);
-    }
 }

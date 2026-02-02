@@ -49,7 +49,7 @@ class TextFiftyFifty extends Layouts
                             'width' => '50'
                         ]),
                     Common::productColors(
-                        array('default' => 'Default', 'tertiary' => 'Seed Green', 'frontier-fields'=> 'Frontier Fields')
+                        array('default' => 'Default', 'tertiary' => 'Seed Green')
                     ),
                     ButtonGroup::make(__('Heading Tag', 'kmag'))
                         ->choices([

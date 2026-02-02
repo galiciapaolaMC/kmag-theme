@@ -106,10 +106,7 @@ class Modules implements WordPressHooks
     public static function disableEditor($id = false)
     {
         $disabled_templates = [
-            'templates/page-builder.php',
-            'templates/retail-calculator-page-builder.php',
-            'templates/resource-library.php',
-            'templates/field-study-detail.php',
+            'templates/page-builder.php'
         ];
 
         if (empty($id)) {

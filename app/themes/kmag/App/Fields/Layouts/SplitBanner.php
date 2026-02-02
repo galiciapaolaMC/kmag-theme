@@ -233,8 +233,6 @@ class SplitBanner extends Layouts
                         ->conditionalLogic([
                             ConditionalLogic::where('type', '!=', 'short-location-banner')
                         ]),
-                    TrueFalse::make(__('Region Crop CTA', 'kmag'), 'region-crop-cta')
-                        ->instructions('Checking the box will change the button behavior to open the Region Crop selector.', 'kmag'),
                     Select::make(__('Location Icon Color', 'kmag'), 'location-icon-color')
                         ->choices([
                             'white' => __('White', 'kmag'),
