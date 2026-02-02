@@ -38,12 +38,9 @@ class Hero extends Layouts
                     $this->contentTab(),
                     ButtonGroup::make(__('Type', 'kmag'), 'type')
                         ->choices([
-                            'full-hero' => __('Full Hero', 'kmag'),
-                            'short-hero' => __('Short Hero', 'kmag'),
                             'product-hero' => __('Product Hero', 'kmag'),
-                            'product-campaign' => __('Product Campaign', 'kmag')
                         ])
-                        ->defaultValue('full-hero'),
+                        ->defaultValue('product-hero'),
                     ButtonGroup::make(__('Hero Media', 'kmag'), 'hero-media')
                         ->choices([
                             'image-hero' => __('Image Hero', 'kmag'),
@@ -85,33 +82,7 @@ class Hero extends Layouts
                             'width' => '25'
                         ]),
                     Textarea::make(__('Headline', 'kmag'), 'headline')
-                        ->rows(2)
-                        ->conditionalLogic([
-                            ConditionalLogic::where('type', '!=', 'product-campaign')
-                        ]),
-                    Link::make(__('Link', 'kmag'), 'link')
-                        ->conditionalLogic([
-                            ConditionalLogic::where('type', '!=', 'product-hero')
-                                ->and('type', '!=', 'product-campaign')
-                        ]),
-                    ButtonGroup::make(__('Link Image', 'kmag'), 'link-image')
-                        ->choices([
-                            'yes' => __('Yes', 'kmag'),
-                            'no' => __('No', 'kmag')
-                        ])
-                        ->defaultValue('no')
-                        ->conditionalLogic([
-                            ConditionalLogic::where('type', '==', 'short-hero')
-                        ]),
-                    Text::make(__('Subtitle', 'kmag'), 'subtitle')
-                        ->conditionalLogic([
-                            ConditionalLogic::where('type', '==', 'product-campaign')
-                        ]),
-                    Textarea::make(__('Content', 'kmag'), 'content')
-                        ->rows(2)
-                        ->conditionalLogic([
-                            ConditionalLogic::where('type', '==', 'product-campaign')
-                        ]),
+                        ->rows(2),
                     Image::make(__('Image', 'kmag'), 'image')
                         ->previewSize('thumbnail')
                         ->wrapper([

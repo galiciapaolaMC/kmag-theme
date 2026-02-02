@@ -1,9 +1,7 @@
 <?php
 
-require __DIR__ . '/constants/api-constants.php';
 require __DIR__ . '/constants/default-module-padding.php';
 require __DIR__ . '/constants/performance-products.php';
-require __DIR__ . '/constants/resource-library-constants.php';
 
 define('ALLOWED_FORMAT_TAGS', '<b><i><em><bold><strong><sup><sub>');
 define('FORMATTING_TAG_INSTRUCTIONS', esc_html('This field allows simple formatting using <strong>, <em>, <sup>, and <sub> html tags.'));

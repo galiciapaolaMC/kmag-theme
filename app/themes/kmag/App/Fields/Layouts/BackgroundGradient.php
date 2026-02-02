@@ -30,15 +30,9 @@ class BackgroundGradient extends Layouts
                     $this->contentTab(),
                     Select::make(__('Page Type', 'kmag'), 'page-type')
                         ->choices([
-                            'core-page' => __('Core Page', 'kmag'),
-                            'cn-page' => __('CN Page', 'kmag'),
-                            'bioscience-page' => __('Bioscience Page', 'kmag'),
-                            'biostimulant-page' => __('Bio Crop Stimulants Page', 'kmag'),
-                            'nutrient-enhancer-page' => __('Bio K-Mag Page', 'kmag'),
-                            'highlight-blue' => __('Highlight Blue', 'kmag'),
                             'product-page' => __('Product Page', 'kmag')
                         ])
-                        ->defaultValue('core-page')
+                        ->defaultValue('product-page')
                         ->returnFormat('value')
                         ->wrapper([
                             'width' => '50'

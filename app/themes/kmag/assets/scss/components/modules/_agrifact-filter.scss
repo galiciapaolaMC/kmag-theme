@@ -18,6 +18,7 @@
     gap: 24px;
     justify-content: flex-start;
     margin-bottom: 40px;
+    padding: 0;
 
     button {
       align-items: center;
@@ -27,6 +28,10 @@
       gap: 16px;
       text-align: center;
       width: 56px;
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+      font-size: _calc-rem(16px);
 
       .icon-wrap {
         align-items: center;

@@ -35,7 +35,6 @@ class SpecSheets implements WordPressHooks
                 'supports' => ['title', 'thumbnail'],
                 'menu_position' => 31,
                 'has_archive' => false,
-                'rewrite' => array('slug' => 'resource-library')
             ]
         );
     }

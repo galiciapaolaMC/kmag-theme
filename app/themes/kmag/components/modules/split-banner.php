@@ -154,13 +154,6 @@ $unique_class = wp_unique_id('watch-video_');
                                     <?php _e('Watch', 'kmag'); ?>
                                 </button>
                             <?php } ?>
-
-                            <?php if ($type === 'short-location-banner') { ?>
-                                <form class="get-location-container" method="get" action="/dealer-locator">
-                                    <input type="text" name="zip_code" placeholder="Enter ZIP or Postal Code" class="location-postal-code" required/>
-                                    <button data-performance-product="<?php echo esc_attr($performance_product_string)?>" class="<?php echo esc_attr($button_classes); ?> btn-location-search"><?php _e('Go', 'kmag'); ?></button>
-                                </form>
-                            <?php } ?>
                         </div>
                     </div>
                 </div>

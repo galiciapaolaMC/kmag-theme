@@ -1,5 +1,3 @@
-import { getCropAndRegion, getSelectedCrop } from './manageCookies';
-
 const ACTIVE_CLASS = 'uk-active';
 const ANIMATION_CLASS = 'uk-animation-fade';
 const HIDDEN_CLASS = 'uk-hidden';
@@ -44,9 +42,6 @@ export default () => {
       return;
     }
     
-    if (!template) {
-      userSettings = getCropAndRegion();
-    }
     const globalCrop = userSettings ? userSettings[1] : null;
 
     let moduleIsLoaded = false;
@@ -109,26 +104,6 @@ export default () => {
         moduleEl.classList.add(HIDDEN_CLASS);
       }
 
-      // Update button set UI when user crop change listener is fired
-      window.addEventListener('crop_has_changed', () => {
-        const crop = getSelectedCrop();
-        let hasCropInList = false;
-
-        Array.from(filterButtonEls).forEach((buttonEl) => {
-          if (buttonEl.dataset.crop === crop) {
-            buttonEl.click();
-            hasCropInList = true;
-            return;
-          }
-        });
-
-        if (crop && !hasCropInList) {
-          moduleEl.classList.add(HIDDEN_CLASS);
-        } else {
-          moduleEl.classList.remove(HIDDEN_CLASS);
-        }
-      });
-
       filterButtonEls.forEach((buttonEl) => {
         // Preselect button if global crop is set to its crop
         if (globalCrop && activeCrops.length > 0) {
@@ -179,25 +154,6 @@ export default () => {
         },
         false
       );
-
-      // Update dropdown UI when user crop change listener is fired
-      window.addEventListener('crop_has_changed', () => {
-        const crop = getSelectedCrop();
-        const foundCropEl = Array.from(cropsListEls).find((el) => {
-          return el.value === crop;
-        });
-
-        // Hide module if crop is not in list of available crops
-        if (!crop || foundCropEl) {
-          moduleEl.classList.remove(HIDDEN_CLASS);
-        } else {
-          moduleEl.classList.add(HIDDEN_CLASS);
-        }
-
-        if (foundCropEl) {
-          foundCropEl.click();
-        }
-      });
     }
 
     // Multi select products
