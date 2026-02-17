@@ -1,4 +1,4 @@
-# [Best & Flanagan]
+# [KMAG]
 
 - [Site URL]
 - [Description of Project]
